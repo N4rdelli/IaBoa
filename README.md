@@ -2,41 +2,41 @@
 
 Páginas de Visão Geral
 
-* Navbar Componentizada
-* Cards Componentizados (Rolês) da Página Inicial
-* Página Inicial
-* Página de Categorias
-* Página de um Rolê
-* Página Sobre o Projeto
-* Página de Desenvolvedores
-* Página de Cadastro (Usuários e Parceiros)
-* Página de Login
-* Página de Esqueci a Senha
-* Footer Componentizado
+* Navbar Componentizada - Abdo
+* Cards Componentizados (Rolês) da Página Inicial - Nardelli
+* Página Inicial - Diego
+* Página de Categorias - JP
+* Página de um Rolê - Abdo
+* Página Sobre o Projeto - Diego
+* Página de Desenvolvedores - JP
+* Página de Cadastro (Usuários e Parceiros) - Altair
+* Página de Login - Altair
+* Página de Esqueci a Senha - Altair
+* Footer Componentizado - Abdo
 
 Páginas para os nossos Usuários
 
-* Perfil de Usuário
-* Rolês Favoritados
+* Perfil de Usuário - Altair
+* Rolês Favoritados - Abdo
 
 
 Páginas para os nossos Parceiros
 
-* Perfil de Parceiro
-* Rolês Cadastrados
-* Cadastrar Rolê
-* Editar Rolê
-* Modal para Excluir Rolê
+* Perfil de Parceiro - Altair
+* Rolês Cadastrados - Abdo
+* Cadastrar Rolê - JP
+* Editar Rolê - Diego
+* Modal para Excluir Rolê - Nardelli
 
 Páginas para os Administradores
 
-* Dashboard
-* Lista de todos os Usuários
-* Lista de todos os Parceiros
-* Lista de todos os Rolês
-* Lista de todos as Categorias
-* Cadastrar Categoria
-* Editar Categoria
-* Modal para Excluir Categoria
-* Modal para Excluir Usuário
-* Modal para Excluir Parceiro
+* Dashboard - Nardelli
+* Lista de todos os Usuários - JP
+* Lista de todos os Parceiros - Diego
+* Lista de todos os Rolês - Abdo
+* Lista de todos as Categorias - Altair
+* Cadastrar Categoria - JP
+* Editar Categoria - Diego
+* Modal para Excluir Categoria - Nardelli
+* Modal para Excluir Usuário - Nardelli
+* Modal para Excluir Parceiro - Nardelli
