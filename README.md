@@ -3,7 +3,7 @@
 Páginas de Visão Geral
 
 * Navbar Componentizada - Abdo
-* Cards Componentizados (Rolês) da Página Inicial - Nardelli
+* Cards Componentizados (Rolês) da Página Inicial - Diego
 * Página Inicial - Diego
 * Página de Categorias - JP
 * Página de um Rolê - Abdo
