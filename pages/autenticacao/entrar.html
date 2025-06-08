@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body
+    class="min-h-screen flex items-center justify-center bg-[#1A1423] bg-[radial-gradient(ellipse_at_bottom_left,_#4B1B83_0%,_transparent_70%),radial-gradient(ellipse_at_bottom_right,_#4B1B83_0%,_transparent_70%)] bg-no-repeat bg-cover text-white">
+    <div class="flex flex-col items-center mt-10">
+        <form action="">
+            <div class="w-100 h-105 flex items-start rounded-lg text-white flex-col bg-[#272032] gap-2">
+                <div class="ml-12 mr-12 mt-6">
+
+                    <div class="flex flex-col gap-4">
+                        <h1 class="text-xl font-semibold mt-5">Entre</h1>
+                        <p class="text-sm text-gray-400 mb-8">Insira suas credenciais para entrar na sua conta</p>
+
+                    </div>
+
+                    <div class="flex flex-col gap-8">
+
+                        <div class="border-b border-white h-8">
+                            <input type="text" placeholder="E-mail ou CPF" class="w-full font-thin text-sm outline-none"
+                                required>
+                        </div>
+
+                        <div class="border-b border-white h-8">
+                            <input type="password" id="pass" placeholder="Senha"
+                                class="w-full font-thin text-sm outline-none " minlength="8" required>
+                        </div>
+                        <div class="flex items-center gap-2 bg-none">
+                            <input type="checkbox" name="" id="" class="hover:cursor-pointer">
+                            <p class="text-base text-sm text-gray-400">Me manter conectado(a)</p>
+                        </div>
+                        <button class="w-full h-10 bg-[#DB2763] font-light hover:cursor-pointer"><a
+                                href="#">Entrar</a></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="flex gap-2 mt-4">
+            <p class="text-white text-sm font-thin">Ainda não tem uma conta?</p>
+            <p class="text-[#DB2763] text-sm font-thin"><a href="cadastrar-usuario.html">Cadastrar-se!</a></p>
+        </div>
+
+
+        <p class="text-[#DB2763] text-sm font-thin mt-2"><a href="#">Esqueceu a senha?</a></p>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

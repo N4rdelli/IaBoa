@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-[#1A1423] bg-[radial-gradient(ellipse_at_bottom_left,_#4B1B83_0%,_transparent_70%),radial-gradient(ellipse_at_bottom_right,_#4B1B83_0%,_transparent_70%)] bg-no-repeat bg-cover text-white">
+    <div class="flex flex-col items-center mt-10">
+        <form action="">
+            <div class="w-full h-full flex items-start rounded-lg text-white flex-col bg-[#272032] pb-8">
+                <div class="ml-12 mr-12 mt-6">
+
+                    <div class="flex flex-col gap-4">
+                        <h1 class="text-xl font-semibold mt-5">Cadastrar-se como Usuário</h1>
+                        <p class="text-sm text-gray-400 mb-8">Crie uma conta para ficar por dentro dos melhores rolês em
+                            JAÚ</p>
+
+                    </div>
+
+                    <div class="flex flex-col gap-8">
+
+                        <div class="border-b border-white h-8">
+                            <input type="text" placeholder="Nome Completo" class="w-full font-thin text-sm outline-none"
+                                required>
+                        </div>
+
+                        <div class="flex gap-5">
+                            <div class="border-b border-white h-8 w-full">
+                                <input type="text" id="pass" placeholder="CPF"
+                                    class="w-full font-thin text-sm outline-none " minlength="11" maxlength="11" required>
+                            </div>
+                            <div class="border-b border-white h-8 w-full">
+                                <input type="date" id="pass" class="w-full font-thin text-sm outline-none text-gray-400"
+                                    minlength="8" required>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-white h-8">
+                            <input type="text" id="pass" placeholder="E-mail"
+                                class="w-full font-thin text-sm outline-none" minlength="8" required>
+                        </div>
+
+                        <div class="border-b border-white h-8">
+                            <input type="password" id="pass" placeholder="Senha"
+                                class="w-full font-thin text-sm outline-none" minlength="8" required>
+                        </div>
+                        <button class="w-full h-10 bg-[#DB2763] font-light hover:cursor-pointer"><a
+                                href="#">Criar minha conta</a></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="flex gap-2 mt-4">
+            <p class="text-white text-sm font-thin">Deseja divulgar os eventos no seu estabelecimento?</p>
+            <p class="text-[#DB2763] text-sm font-thin"><a href="cadastrar-parceiro.html">Cadastrar-se como parceiro!</a></p>
+        </div>
+
+        <div class="flex gap-2 mt-4">
+            <p class="text-white text-sm font-thin">Já tem uma conta?</p>
+            <p class="text-[#DB2763] text-sm font-thin"><a href="entrar.html">Entrar</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
