@@ -3,3 +3,8 @@
 body{
     font-family: Raleway, 'sans-serif';
 }
+
+.img{
+    background-image: url(/imgs/Section\ Hero.svg);
+    object-fit: cover;
+}

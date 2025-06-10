@@ -16,9 +16,8 @@
 
 
 <body>
-
   <!-- Master Head: em display flex column para ajudar no processo de centralização do texto em relação a div. Testando manualmente os tamanhos "96" foi o mais próximo do resultado do figma e a cor preta é placeholder até eu pegar a imagem utilizada no figma-->
-  <div class="w-full flex flex-col h-96 bg-black justify-center">
+  <div class="w-full flex flex-col h-96 justify-center bg-[#1A1423]"> 
     <!-- Texto superior: além do já explicado, items baseline foi a forma que eu achei de igualar a distância vertical do TEXTO de diferente tamanho sem estragar a centralização inicial -->
     <div class="flex justify-center items-baseline text-white ">
       <h1 class="text-6xl text-center font-semibold raleway">I a Boa</h1>
@@ -140,13 +139,13 @@
         <!-- Wrapper dos containers 1 -->
         <div class="flex flex-row flex-wrap justify-start">
           <!-- Molde 1-->
-          <div class="h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] rounded-2xl flex relative">
+          <div class="h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative">
             <!-- Imagem 1-->
             <div class="h-45 w-1/3 bg-white">
 
             </div>
             <!-- Espaço com informações-->
-            <div class="h-45 w-2/3 rounded-2xl overflow-hidden">
+            <div class="h-45 w-2/3 overflow-hidden">
               <!-- Div organizadora-->
               <div class="flex h-full flex-col justify-start py-6 px-4.5">
                 <!-- Texto titulo-->
@@ -176,20 +175,21 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-4 top-1/2 -translate-y-1/2">
-                  <img class="h-[48px] w-[48px]" src="imgs/Buttons.svg">
+                  <img class="h-[48px] w-[48px] mr-2" src="imgs/Button Seta.svg">
+                  <img class="h-[48px] w-[48px] mt-4 mr-2" src="imgs/Button Cora.svg">
                 </div>
 
               </div>
             </div>
           </div>
           <!-- Molde 2-->
-          <div class="h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] rounded-2xl flex relative">
+          <div class="h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative">
             <!-- Imagem 2-->
             <div class="h-45 w-1/3 bg-white">
 
             </div>
             <!-- Espaço com informações-->
-            <div class="h-45 w-2/3 rounded-2xl overflow-hidden">
+            <div class="h-45 w-2/3 overflow-hidden">
               <!-- Div organizadora-->
               <div class="flex h-full flex-col justify-start py-6 px-4.5">
                 <!-- Texto titulo-->
@@ -219,7 +219,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-4 top-1/2 -translate-y-1/2">
-                  <img class="h-[48px] w-[48px]" src="imgs/Buttons.svg">
+                  <img class="h-[48px] w-[48px] mr-2" src="imgs/Button Seta.svg">
+                  <img class="h-[48px] w-[48px] mt-4 mr-2" src="imgs/Button Cora.svg">
                 </div>
 
               </div>
@@ -227,13 +228,13 @@
           </div>
 
           <!-- Molde 3-->
-          <div class="my-8 h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] rounded-2xl flex relative">
+          <div class="my-8 h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative">
             <!-- Imagem 3-->
             <div class="h-45 w-1/3 bg-white">
 
             </div>
             <!-- Espaço com informações-->
-            <div class="h-45 w-2/3 rounded-2xl overflow-hidden">
+            <div class="h-45 w-2/3 overflow-hidden">
               <!-- Div organizadora-->
               <div class="flex h-full flex-col justify-start py-6 px-4.5">
                 <!-- Texto titulo-->
@@ -263,7 +264,9 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-4 top-1/2 -translate-y-1/2">
-                  <img class="h-[48px] w-[48px]" src="imgs/Buttons.svg">
+                  <img class="h-[48px] w-[48px] mr-2" src="imgs/Button Seta.svg">
+                  <img class="h-[48px] w-[48px] mt-4 mr-2" src="imgs/Button Cora.svg">
+
                 </div>
 
               </div>
@@ -273,13 +276,13 @@
           <!-- Os moldes "solitários" acabavam perdendo a proporção com o flex-grow que eu estabeleci, e por isso eu adicionei um invisivel de código igual que vai funcionar efetivamente só pra alinhar os solitários com os acima-->
           <!-- Molde fantasma 1-->
           <div
-            class="my-8 h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] rounded-2xl flex relative invisible pointer-events-none">
+            class="my-8 h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative invisible pointer-events-none">
             <!-- Imagem 3-->
             <div class="h-45 w-1/3 bg-white">
 
             </div>
             <!-- Espaço com informações-->
-            <div class="h-45 w-2/3 rounded-2xl overflow-hidden">
+            <div class="h-45 w-2/3 overflow-hidden">
               <!-- Div organizadora-->
               <div class="flex h-full flex-col justify-start py-6 px-4.5">
                 <!-- Texto titulo-->
@@ -309,7 +312,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-4 top-1/2 -translate-y-1/2">
-                  <img class="h-[48px] w-[48px]" src="imgs/Buttons.svg">
+                  <img class="h-[48px] w-[48px] mr-2" src="imgs/Button Seta.svg">
+                  <img class="h-[48px] w-[48px] mt-4 mr-2" src="imgs/Button Cora.svg">
                 </div>
 
               </div>
@@ -330,13 +334,13 @@
         <!-- Wrapper dos containers 2 -->
         <div class="flex flex-row flex-wrap justify-start">
           <!-- Molde 4-->
-          <div class="h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] rounded-2xl flex relative">
+          <div class="h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative">
             <!-- Imagem 4-->
             <div class="h-45 w-1/3 bg-white">
 
             </div>
             <!-- Espaço com informações-->
-            <div class="h-45 w-2/3 rounded-2xl overflow-hidden">
+            <div class="h-45 w-2/3 overflow-hidden">
               <!-- Div organizadora-->
               <div class="flex h-full flex-col justify-start py-6 px-4.5">
                 <!-- Texto titulo-->
@@ -366,20 +370,21 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-4 top-1/2 -translate-y-1/2">
-                  <img class="h-[48px] w-[48px]" src="imgs/Buttons.svg">
+                  <img class="h-[48px] w-[48px] mr-2" src="imgs/Button Seta.svg">
+                  <img class="h-[48px] w-[48px] mt-4 mr-2" src="imgs/Button Cora.svg">
                 </div>
 
               </div>
             </div>
           </div>
           <!-- Molde 5-->
-          <div class="h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] rounded-2xl flex relative">
+          <div class="h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative">
             <!-- Imagem 5-->
             <div class="h-45 w-1/3 bg-white">
 
             </div>
             <!-- Espaço com informações-->
-            <div class="h-45 w-2/3 rounded-2xl overflow-hidden">
+            <div class="h-45 w-2/3 overflow-hidden">
               <!-- Div organizadora-->
               <div class="flex h-full flex-col justify-start py-6 px-4.5">
                 <!-- Texto titulo-->
@@ -409,7 +414,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-4 top-1/2 -translate-y-1/2">
-                  <img class="h-[48px] w-[48px]" src="imgs/Buttons.svg">
+                  <img class="h-[48px] w-[48px] mr-2" src="imgs/Button Seta.svg">
+                  <img class="h-[48px] w-[48px] mt-4 mr-2" src="imgs/Button Cora.svg">
                 </div>
 
               </div>
@@ -417,13 +423,13 @@
           </div>
 
           <!-- Molde 6-->
-          <div class="my-8 h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] rounded-2xl flex relative">
+          <div class="my-8 h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative">
             <!-- Imagem 6-->
             <div class="h-45 w-1/3 bg-white">
 
             </div>
             <!-- Espaço com informações-->
-            <div class="h-45 w-2/3 rounded-2xl overflow-hidden">
+            <div class="h-45 w-2/3 overflow-hidden">
               <!-- Div organizadora-->
               <div class="flex h-full flex-col justify-start py-6 px-4.5">
                 <!-- Texto titulo-->
@@ -453,7 +459,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-4 top-1/2 -translate-y-1/2">
-                  <img class="h-[48px] w-[48px]" src="imgs/Buttons.svg">
+                  <img class="h-[48px] w-[48px] mr-2" src="imgs/Button Seta.svg">
+                  <img class="h-[48px] w-[48px] mt-4 mr-2" src="imgs/Button Cora.svg">
                 </div>
 
               </div>
@@ -462,13 +469,13 @@
 
 
           <!-- Molde 7-->
-          <div class="my-8 h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] rounded-2xl flex relative">
+          <div class="my-8 h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative">
             <!-- Imagem 7-->
             <div class="h-45 w-1/3 bg-white">
 
             </div>
             <!-- Espaço com informações-->
-            <div class="h-45 w-2/3 rounded-2xl overflow-hidden">
+            <div class="h-45 w-2/3 overflow-hidden">
               <!-- Div organizadora-->
               <div class="flex h-full flex-col justify-start py-6 px-4.5">
                 <!-- Texto titulo-->
@@ -498,7 +505,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-4 top-1/2 -translate-y-1/2">
-                  <img class="h-[48px] w-[48px]" src="imgs/Buttons.svg">
+                  <img class="h-[48px] w-[48px] mr-2" src="imgs/Button Seta.svg">
+                  <img class="h-[48px] w-[48px] mt-4 mr-2" src="imgs/Button Cora.svg">
                 </div>
 
               </div>
@@ -516,13 +524,13 @@
           <!-- Wrapper dos containers 3 -->
           <div class="flex flex-row flex-wrap justify-start">
             <!-- Molde 8-->
-            <div class="h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] rounded-2xl flex relative">
+            <div class="h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative">
               <!-- Imagem 8-->
               <div class="h-45 w-1/3 bg-white">
 
               </div>
               <!-- Espaço com informações-->
-              <div class="h-45 w-2/3 rounded-2xl overflow-hidden">
+              <div class="h-45 w-2/3 overflow-hidden">
                 <!-- Div organizadora-->
                 <div class="flex h-full flex-col justify-start py-6 px-4.5">
                   <!-- Texto titulo-->
@@ -552,7 +560,8 @@
                   <!--Ponteiro-->
                   <!-- Monta a posição absoluta do ponteiro na direita-->
                   <div class="absolute right-4 top-1/2 -translate-y-1/2">
-                    <img class="h-[48px] w-[48px]" src="imgs/Buttons.svg">
+                    <img class="h-[48px] w-[48px] mr-2" src="imgs/Button Seta.svg">
+                    <img class="h-[48px] w-[48px] mt-4 mr-2" src="imgs/Button Cora.svg">
                   </div>
 
                 </div>
@@ -562,13 +571,13 @@
 
             <!-- Molde fantasma 2-->
             <div
-              class="my-8 h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] rounded-2xl flex relative invisible pointer-events-none">
+              class="my-8 h-45 w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative invisible pointer-events-none">
               <!-- Imagem 3-->
               <div class="h-45 w-1/3 bg-white">
 
               </div>
               <!-- Espaço com informações-->
-              <div class="h-45 w-2/3 rounded-2xl overflow-hidden">
+              <div class="h-45 w-2/3 overflow-hidden">
                 <!-- Div organizadora-->
                 <div class="flex h-full flex-col justify-start py-6 px-4.5">
                   <!-- Texto titulo-->
@@ -598,7 +607,8 @@
                   <!--Ponteiro-->
                   <!-- Monta a posição absoluta do ponteiro na direita-->
                   <div class="absolute right-4 top-1/2 -translate-y-1/2">
-                    <img class="h-[48px] w-[48px]" src="imgs/Buttons.svg">
+                    <img class="h-[48px] w-[48px] mr-2" src="imgs/Button Seta.svg">
+                    <img class="h-[48px] w-[48px] mt-4 mr-2" src="imgs/Button Cora.svg">
                   </div>
 
                 </div>
@@ -789,7 +799,7 @@
   <!-- Newsletter -->
   <div class="w-full h-80 bg-black text-white">
     <h3 class="text-3xl text-center font-semibold raleway pt-12 pb-4">Não tá afim de perder nenhuma novidade?</h3>
-    <h5 class="text-xl text-center raleway pb-6">Se inscreva na nossa <b class="font-semibold">newsletter</b>. É a
+    <h5 class="text-xl text-center raleway pb-6">Se inscreva na nossa <b class="font-semibold">Newsletter</b>. É a
       garantia de que você vai estar por dentro de tudo!</h5>
     <div class="flex justify-self-center items-center w-296 h-28 bg-[#272032] ">
       <div class="flex mx-8 w-230 h-12 bg-white">
