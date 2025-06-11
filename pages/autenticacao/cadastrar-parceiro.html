@@ -7,12 +7,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body
-    class="min-h-screen flex items-center justify-center bg-[#1A1423] text-white">
+<body class="min-h-screen flex items-center justify-center bg-[#1A1423] text-white">
+    <!-- Definindo container -->
     <div class="flex flex-col items-center mt-10">
         <form action="">
-            <div class="w-full h-full flex items-start rounded-lg text-white flex-col bg-[#272032] pb-8">
-                <div class="ml-12 mr-12 mt-6">
+            <div class="w-100 md:w-full md:h-full flex items-start rounded-lg text-white flex-col bg-[#272032] pb-8">
+                <div class="md:ml-12 md:mr-12 md:mt-6 ml-16 mr-16 mt-6">
 
                     <div class="flex flex-col gap-4">
                         <h1 class="text-xl font-semibold mt-5">Cadastrar-se como Parceiro</h1>
@@ -21,7 +21,8 @@
 
                     </div>
 
-                    <div class="flex flex-col gap-8">
+                    <div class="flex flex-col gap-8 ">
+                        <!-- INICIO INPUTS(Caixas de texto)-->
 
                         <div class="border-b border-white h-8">
                             <input type="text" placeholder="Razão Social" class="w-full font-thin text-sm outline-none"
@@ -30,41 +31,43 @@
 
                         <div class="flex gap-5">
                             <div class="border-b border-white h-8 w-full">
-                                <input type="text" placeholder="CNPJ"
-                                    class="w-full font-thin text-sm outline-none " minlength="14" maxlength="14" required>
+                                <input type="text" placeholder="CNPJ" class="w-full font-thin text-sm outline-none "
+                                    minlength="14" maxlength="14" required>
                             </div>
                             <div class="border-b border-white h-8 w-full">
-                                <input type="text" placeholder="Telefone para contato" class="w-full font-thin text-sm outline-none"
-                                    minlength="11" maxlength="11" required>
+                                <input type="text" placeholder="Telefone para contato"
+                                    class="w-full font-thin text-sm outline-none" minlength="11" maxlength="11"
+                                    required>
                             </div>
                         </div>
 
                         <div class="border-b border-white h-8">
-                            <input type="text" placeholder="E-mail"
-                                class="w-full font-thin text-sm outline-none" minlength="8" required>
+                            <input type="text" placeholder="E-mail" class="w-full font-thin text-sm outline-none"
+                                minlength="8" required>
                         </div>
 
                         <div class="border-b border-white h-8">
-                            <input type="password" placeholder="Senha"
-                                class="w-full font-thin text-sm outline-none" minlength="8" required>
+                            <input type="password" placeholder="Senha" class="w-full font-thin text-sm outline-none"
+                                minlength="8" required>
                         </div>
 
                         <button class="w-full h-10 bg-[#DB2763] font-light hover:cursor-pointer"><a href="#">Criar minha
-                                conta</a></button>
-                    </div>
+                            conta</a></button>
+                    </div> <!-- FIM INPUTS -->
                 </div>
             </div>
         </form>
-        <div class="flex gap-2 mt-4">
-            <p class="text-white text-sm font-thin">Deseja ficar por dentro dos melhores rolês em Jaú?</p>
-            <p class="text-[#DB2763] text-sm font-thin"><a href="cadastrar-usuario.html">Cadastre-se como usuário!</a></p>
+        <div class="flex gap-1 md:gap-2 mr-12 ml-12 mt-4 ">
+            <p class="text-white text-sm font-thin">Quer receber notifica   ções de rolês?</p>
+            <p class="text-[#DB2763] text-sm font-thin"><a href="cadastrar-usuario.html">Cadastre-se como usuário!</a>
+            </p>
         </div>
 
         <div class="flex gap-2 mt-4">
             <p class="text-white text-sm font-thin">Já tem uma conta?</p>
             <p class="text-[#DB2763] text-sm font-thin"><a href="entrar.html">Entrar</a></p>
         </div>
-    </div>
+    </div> <!-- END container -->
 
 </body>
 
