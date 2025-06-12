@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#272032]">
+    <nav class="bg-zinc-900 px-8 py-4">
+        <div class="flex justify-between items-center w-full">
+            <!-- Logo -->
+            <a href="" class="text-white text-lg font bold"></a>
+
+            <!-- Links de navegação -->
+            <div class="hidden md:flex space-x-4 mx-4 flex-grow">
+                <a href="../index.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Página Inicial</a>
+                <a href="../pages/sobre.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Sobre o
+                    Projeto</a>
+                <a href="../pages/sobre.html"
+                    class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Desenvolvedores</a>
+            </div>
+
+            <!-- Botões de login/cadastro -->
+            <div class="flex gap-3">
+                <div class="hidden md:block hover:text-zinc-900">
+                    <a href="#"
+                        class="text-white hover:bg-white-900 border border-white transition-colors duration-300 px-4 py-2 rounded">Cadastre-se</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#"
+                        class="text-white bg-[#DB2763] hover:bg-[#B01D4F] px-4 py-2 rounded transition-colors duration-200">Login</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Versão Mobile -->
+    <div id="mobile-menu" class="hidden bg-zinc-900 w-1/2 float-end at-2 me-2 py-4 shadow-lg">
+        <div class="flex flex-col text-white space-y-4 px-4 text-left">
+            <a href="../pages/usuarios/perfil-usuario.html"
+                class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-regular fa-user"></i>Minha conta</a>
+            <a href="../pages/usuarios/favoritos-usuario.html"
+                class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-regular fa-heart"></i>Favoritos</a>
+            <a href="#" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-clock-rotate-left"></i>Histórico</a>
+
+            <div class="border-b-1 border-white-700 w-6/7 mx-auto"></div>
+            <a href="" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-house-user"></i>Minha conta</a>
+            <a href="#" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-regular fa-folder-open"></i>Favoritos</a>
+            <div class="border-b-1 border-white-700 w-6/7 mx-auto"></div>
+            <a href="" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-shield-halved"></i>Minha Conta</a>
+            <a href="../pages/admin/dashboard.html"
+                class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-desktop"></i>Painel Administrador</a>
+
+            <div class="border-b-1 border-white-700 w-6/7 mx-auto"></div>
+            <a href="" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-arrow-left"></i>Sair</a>
+        </div>
+    </div>
+
+    <!--JavaScript-->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.replace('fa-bars', 'fa-xmark');
+            } else {
+                icon.classList.replace('fa-xmark', 'fa-bars');
+            }
+        });
+    </script>
+    <!-- Título -->
+    <div class="text-center pt-6 mt-6">
+        <h2 class="text-white text-3xl md:text-[48px]">Favoritos</h2>
+        <p class="text-white text-sm md:text-base mt-6">Veja os Rolês e as Categorias que você favoritou</p>
+    </div>
+
+
+    <div class="px-4 md:px-8 py-8">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Coluna dos Cards -->
+            <div class="flex-1">
+                <p class="text-white text-lg mb-4">Rolês Favoritados</p>
+                <section class="flex flex-col gap-6 w-full">
+
+                    <!-- Card 1 -->
+                    <div class="flex flex-col sm:flex-row w-full h-auto sm:h-[144px] rounded overflow-hidden shadow">
+                        <img src="../../imgs/barça.jpg" alt="" class="w-full sm:w-[183px] h-[144px] object-cover">
+                        <div class="flex-1 bg-[#3C3746] text-white p-4 flex justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-bold">Barça Bar</h3>
+                                <p class="text-xs sm:text-sm mt-2"><i class="fa-regular fa-map mr-2"></i>Av. Frederico
+                                    Ozanan, 26 - Vila Santa Maria, Jaú - SP, 17205-000</p>
+                                <p class="text-xs sm:text-sm"><i class="fa-regular fa-calendar mr-2"></i>17/08 20:00</p>
+                            </div>
+                            <div
+                                class="flex sm:flex-col items-center justify-center sm:pr-4 space-x-2 sm:space-x-0 sm:space-y-4">
+                                <button
+                                    class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                                    <i class="fa-solid fa-arrow-right rotate-320 text-xs sm:text-base"></i>
+                                </button>
+                                <button
+                                    class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                                    <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="flex flex-col sm:flex-row w-full h-auto sm:h-[144px] rounded overflow-hidden shadow">
+                        <img src="../../imgs/462006208_841770358040861_9094793643667912938_n.jpg" alt=""
+                            class="w-full sm:w-[183px] h-[144px] object-cover">
+                        <div class="flex-1 bg-[#3C3746] text-white p-4 flex justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-bold">Baco Bar</h3>
+                                <p class="text-xs sm:text-sm mt-2"><i class="fa-regular fa-map mr-2"></i>R. Campos
+                                    Sales, 98 - Centro, Jaú - SP, 17201-020</p>
+                                <p class="text-xs sm:text-sm"><i class="fa-regular fa-calendar mr-2"></i>09/09 21:00</p>
+                            </div>
+                            <div
+                                class="flex sm:flex-col items-center justify-center sm:pr-4 space-x-2 sm:space-x-0 sm:space-y-4">
+                                <button
+                                    class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                                    <i class="fa-solid fa-arrow-right rotate-320 text-xs sm:text-base"></i>
+                                </button>
+                                <button
+                                    class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                                    <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="flex flex-col sm:flex-row w-full h-auto sm:h-[144px] rounded overflow-hidden shadow">
+                        <img src="../../imgs/download (2).png" alt=""
+                            class="w-full sm:w-[183px] h-[144px] object-cover">
+                        <div class="flex-1 bg-[#3C3746] text-white p-4 flex justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-bold">Adelaide Bar</h3>
+                                <p class="text-xs sm:text-sm mt-2"><i class="fa-regular fa-map mr-2"></i>R. Mal.
+                                    Bitencourt, 241 - Centro, Jaú - SP, 17201-430</p>
+                                <p class="text-xs sm:text-sm"><i class="fa-regular fa-calendar mr-2"></i>05/06 18:00</p>
+                            </div>
+                            <div
+                                class="flex sm:flex-col items-center justify-center sm:pr-4 space-x-2 sm:space-x-0 sm:space-y-4">
+                                <button
+                                    class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                                    <i class="fa-solid fa-arrow-right rotate-320 text-xs sm:text-base"></i>
+                                </button>
+                                <button
+                                    class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                                    <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="flex flex-col sm:flex-row w-full h-auto sm:h-[144px] rounded overflow-hidden shadow">
+                        <img src="../../imgs/barban.webp" alt="" class="w-full sm:w-[183px] h-[144px] object-cover">
+                        <div class="flex-1 bg-[#3C3746] text-white p-4 flex justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-bold">Barban Pub</h3>
+                                <p class="text-xs sm:text-sm mt-2"><i class="fa-regular fa-map mr-2"></i>R. Saldanha
+                                    Marinho, 1181</p>
+                                <p class="text-xs sm:text-sm"><i class="fa-regular fa-calendar mr-2"></i>15/11 19:00
+                                </p>
+                            </div>
+                            <div
+                                class="flex sm:flex-col items-center justify-center sm:pr-4 space-x-2 sm:space-x-0 sm:space-y-4">
+                                <button
+                                    class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                                    <i class="fa-solid fa-arrow-right text-xs sm:text-base rotate-320"></i>
+                                </button>
+                                <button
+                                    class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                                    <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Coluna de Categorias -->
+            <div class="lg:w-[373px]">
+                <p class="text-white text-lg mb-4">Categorias Favoritadas</p>
+                <div class="flex flex-col gap-3">
+                    <!-- Categoria-->
+                    <div class="w-full h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                        <div class="flex items-center gap-2 text-[#DB2763]">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span>Padrão</span>
+                        </div>
+                        <button
+                            class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                        </button>
+                    </div>
+
+                    <!-- Categoria -->
+                    <div class="w-full h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                        <div class="flex items-center gap-2 text-[#574AE2]">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span>Padrão</span>
+                        </div>
+                        <button
+                            class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                        </button>
+                    </div>
+
+                    <!-- Categoria -->
+                    <div class="w-full h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                        <div class="flex items-center gap-2 text-[#80FF91]">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span>Padrão</span>
+                        </div>
+                        <button
+                            class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                        </button>
+                    </div>
+
+                    <!--Categoria-->
+                    <div class="w-full h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                        <div class="flex items-center gap-2 text-[#FFD83E]">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span>Padrão</span>
+                        </div>
+                        <button
+                            class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                        </button>
+                    </div>
+
+                    <!-- Categoria -->
+                    <div class="w-full h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                        <div class="flex items-center gap-2 text-[#00A8FF]">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span>Padrão</span>
+                        </div>
+                        <button
+                            class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                        </button>
+                    </div>
+
+                    <!-- Categoria-->
+                    <div class="w-full h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                        <div class="flex items-center gap-2 text-[#DB2763]">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span>Padrão</span>
+                        </div>
+                        <button
+                            class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                        </button>
+                    </div>
+
+                    <!-- Categoria -->
+                    <div class="w-full h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                        <div class="flex items-center gap-2 text-[#574AE2]">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span>Padrão</span>
+                        </div>
+                        <button
+                            class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                        </button>
+                    </div>
+
+                    <!-- Categoria -->
+                    <div class="w-full h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                        <div class="flex items-center gap-2 text-[#80FF91]">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span>Padrão</span>
+                        </div>
+                        <button
+                            class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                        </button>
+                    </div>
+
+                    <!--Categoria-->
+                    <div class="w-full h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                        <div class="flex items-center gap-2 text-[#FFD83E]">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span>Padrão</span>
+                        </div>
+                        <button
+                            class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                        </button>
+                    </div>
+
+                    <!-- Categoria -->
+                    <div class="w-full h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                        <div class="flex items-center gap-2 text-[#00A8FF]">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span>Padrão</span>
+                        </div>
+                        <button
+                            class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                        </button>
+                    </div>
+
+                    <!-- Categoria-->
+                    <div class="w-full h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                        <div class="flex items-center gap-2 text-[#DB2763]">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span>Padrão</span>
+                        </div>
+                        <button
+                            class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fas fa-heart text-white text-xs sm:text-base"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-[#110E15] py-8">
+        <div class="container mx-auto px-4">
+            <!-- Conteúdo principal -->
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0 lg:h-[120px]">
+                <!-- Esquerda - Logo -->
+                <div class="flex items-center justify-center h-full">
+                    <span class="text-white text-2xl font-bold">I a Boa?</span>
+                </div>
+
+                <!-- Centro - Links -->
+                <div class="flex items-center justify-center h-full">
+                    <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-white">
+                        <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">Link Footer
+                            1</a>
+                        <span class="text-gray-500 hidden sm:inline">|</span>
+                        <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">Link 2</a>
+                        <span class="text-gray-500 hidden sm:inline">|</span>
+                        <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">Terceiro
+                            link</a>
+                        <span class="text-gray-500 hidden sm:inline">|</span>
+                        <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">4 link</a>
+                    </div>
+                </div>
+
+                <!-- Direita - Redes Sociais -->
+                <div class="flex flex-col items-center justify-center h-full">
+                    <h3 class="text-white mb-3 text-sm sm:text-base">Nos siga nas redes sociais!</h3>
+                    <div class="flex justify-center space-x-4 sm:space-x-6">
+                        <a href="#" class="text-white hover:text-[#574AE2] text-lg sm:text-xl transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-[#574AE2] text-lg sm:text-xl transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-[#574AE2] text-lg sm:text-xl transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Linha divisória -->
+            <div class="border-t border-gray-700 w-full sm:w-3/4 mx-auto my-6"></div>
+
+            <!-- Direitos reservados -->
+            <div class="text-center text-gray-400 text-xs sm:text-sm">
+                Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+
+    <body>
+        <html>
