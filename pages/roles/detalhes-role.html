@@ -70,39 +70,88 @@
         }
     </style>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="bg-[#1A1423] px-8 py-4">
-        <div class="flex justify-between items-center">
-            <!-- Logo e Links (esquerda) -->
-            <div class="flex items-center space-x-8">
-                <a href="" class="text-white text-lg font-bold">I a Boa?</a>
+    <nav class="bg-zinc-900 px-8 py-4">
+        <div class="flex justify-between items-center w-full">
+            <!-- Logo -->
+            <a href="" class="text-white text-lg font bold"></a>
 
-                <!-- Links Navbar -->
-                <div class="hidden md:flex space-x-4">
-                    <a href="../index.html" class="nav-link text-white px-3 py-2">Página Inicial</a>
-                    <a href="../pages/sobre.html" class="nav-link text-white px-3 py-2">Sobre o Projeto</a>
-                    <a href="../pages/desenvolvedores.html" class="nav-link text-white px-3 py-2">Desenvolvedores</a>
-                </div>
+            <!-- Links de navegação -->
+            <div class="hidden md:flex space-x-4 mx-4 flex-grow">
+                <a href="../../index.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Página Inicial</a>
+                <a href="../sobre.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Sobre o Projeto</a>
+                <a href="../desenvolvedores.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Desenvolvedores</a>
             </div>
 
-            <!-- Botões (direita) -->
-            <div class="hidden md:flex items-center space-x-4">
-                <a href="../pages/autenticacao/cadastrar-usuario.html"
-                    class="text-white hover:text-[#574AE2] border border-white hover:border-[#574AE2] px-4 py-2 rounded transition-all">Cadastre-se</a>
-                <a href="../pages//autenticacao//entrar.html"
-                    class="text-white bg-[#574AE2] hover:bg-[#3A2EC1] px-6 py-2 rounded transition-all mr-4">Entre</a>
+            <!-- Botões de login/cadastro -->
+            <div class="flex gap-3">
+                <div class="hidden md:block hover:text-zinc-900">
+                    <a href="#"
+                        class="text-white hover:bg-white-900 border border-white transition-colors duration-300 px-4 py-2 rounded">Cadastre-se</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#"
+                        class="text-white bg-[#DB2763] hover:bg-[#B01D4F] px-4 py-2 rounded transition-colors duration-200">Login</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
+
+    <!-- Versão Mobile -->
+    <div id="mobile-menu" class="hidden bg-zinc-900 w-1/2 float-end at-2 me-2 py-4 shadow-lg">
+        <div class="flex flex-col text-white space-y-4 px-4 text-left">
+            <a href="../pages/usuarios/perfil-usuario.html" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-regular fa-user"></i>Minha conta</a>
+            <a href="../pages/usuarios/favoritos-usuario.html" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-regular fa-heart"></i>Favoritos</a>
+            <a href="#" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-clock-rotate-left"></i>Histórico</a>
+
+            <div class="border-b-1 border-white-700 w-6/7 mx-auto"></div>
+            <a href="" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-house-user"></i>Minha conta</a>
+            <a href="#" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-regular fa-folder-open"></i>Favoritos</a>
+            <div class="border-b-1 border-white-700 w-6/7 mx-auto"></div>
+            <a href="" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-shield-halved"></i>Minha Conta</a>
+            <a href="../pages/admin/dashboard.html" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-desktop"></i>Painel Administrador</a>
+
+            <div class="border-b-1 border-white-700 w-6/7 mx-auto"></div>
+            <a href="" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-arrow-left"></i>Sair</a>
+        </div>
+    </div>
+
+    <!--JavaScript-->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.replace('fa-bars', 'fa-xmark');
+            } else {
+                icon.classList.replace('fa-xmark', 'fa-bars');
+            }
+        });
+    </script>
+</body>
+<body>
     <!-- Conteúdo da Página -->
     <div>
         <!-- Nome do evento/botões -->
         <header class="p-4 md:p-8">
             <div class="container mx-auto">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                    <h1 class="text-3xl md:text-4xl font-bold">Nome do Evento</h1>
+                    <h1 class="text-3xl md:text-4xl font-bold">Baco Bar </h1>
 
                     <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
                         <div class="flex gap-2 justify-center">
@@ -129,8 +178,7 @@
                 <!-- Informações do Evento -->
                 <div class="flex-1">
                     <p class="mb-6">
-                        Descrição do evento. Aqui você pode escrever detalhes sobre o que vai acontecer,
-                        quem vai participar e outras informações importantes para os visitantes.
+                        Bar (que era) Nômade
                     </p>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -143,7 +191,7 @@
                                 <i class="fas fa-building"></i> Local do Evento
                             </div>
                             <div class="flex items-center gap-2">
-                                <i class="fas fa-map"></i> Rua Exemplo, 123
+                                <i class="fas fa-map"></i>  R. Campos Sales, 98 - Centro, Jaú - SP, 17201-020
                             </div>
                         </div>
 
@@ -170,10 +218,13 @@
 
                 <!-- Imagem do Evento (placeholder) -->
                 <div class="flex-1 flex justify-center lg:justify-end">
-                    <div class="w-full h-64 lg:w-80 lg:h-80 bg-gray-600 rounded-lg flex items-center justify-center">
-                        <span class="text-gray-300">Imagem do Evento</span>
+                    <div
+                        class="w-full h-64 lg:w-80 lg:h-80 bg-gray-600 rounded-lg flex items-center justify-center overflow-hidden">
+                        <img src="../../imgs/bacobar.webp" alt="Imagem do Evento"
+                            class="object-cover w-full h-full">
                     </div>
                 </div>
+
             </div>
         </main>
         <!-- Seção de Busca -->
@@ -287,6 +338,7 @@
             </div>
         </section>
     </div>
+    
     <!-- Footer -->
     <footer class="bg-[#110E15] py-8">
         <div class="container mx-auto px-4">
