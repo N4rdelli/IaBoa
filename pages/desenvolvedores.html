@@ -16,55 +16,12 @@
             font-weight: 300;
         }
 
-        .nav-link {
-            position: relative;
-        }
-
-        .nav-link:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: #574AE2;
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover:after {
-            width: 100%;
-        }
-
-        .font-bold {
-            font-weight: 400;
-        }
     </style>
 
 </head>
 
 <body class="bg-[#1A1423] text-[#fff]">
     <navbar-iaboa></navbar-iaboa>
-
-    <!-- Navbar -->
-    <!-- <nav class="bg-[#1A1423] px-8 py-4">
-        <div class="flex justify-between items-center">
-            <!-- Logo + Links (esquerda) --
-            <div class="flex items-center space-x-8">
-                <a href="#" class="text-white text-lg font-bold">I a Boa?</a>
-                <!-- Links principais --
-                <div class="hidden md:flex space-x-4">
-                    <a href="#" class="nav-link text-white px-3 py-2">Página Inicial</a>
-                    <a href="#" class="nav-link text-white px-3 py-2">Sobre o Projeto</a>
-                    <a href="#" class="nav-link text-white px-3 py-2">Desenvolvedores</a>
-                </div>
-            </div>
-            <!-- Botões (direita) --
-            <div class="hidden md:flex items-center space-x-4">
-                <a href="#" class="text-white hover:text-[#574AE2] border border-white hover:border-[#574AE2] px-4 py-2 rounded transition-all">Cadastre-se</a>
-                <a href="#" class="text-white bg-[#574AE2] hover:bg-[#3A2EC1] px-6 py-2 rounded transition-all mr-4">Entre</a>
-            </div>
-        </div>
-    </nav> -->
 
     <!-- Titulo da página -->
     <div class="flex justify-center items-center flex-col mt-20">
@@ -77,9 +34,8 @@
     <main>
         <div class="flex justify-center items-center mt-10 flex-col">
             <!-- Card 1 Altair -->
-            <div
-                class="flex md:items-center  bg-[#272032] rounded-md flex flex-col md:flex-row w-xs md:h-auto md:w-3xl lg:w-5xl">
-                <img class="m-[10px] rounded-full w-25 h-25 object-cover" src="../imgs/Altair.jpg" alt="">
+            <div class="flex md:items-center bg-[#272032] rounded-md flex flex-col md:flex-row w-xs md:h-auto md:w-3xl lg:w-5xl">
+                <img class="m-[10px] md:m-10 rounded-full w-25 h-25 md:w-49 md:h-49 object-cover" src="../imgs/Altair.jpg" alt="">
                 <div class="mt-[8px] lg:mt-7 md:ml-5 md:mt-7 flex flex-col ml-5">
                     <!-- Nome e texto sobre -->
                     <h2 class="font-semibold md:text-2xl">Altair</h2>
