@@ -5,9 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Usuário</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-[#1A1423] text-white">
+
+    <div class="flex flex-col items-center mt-10">
+
+        <h1 class="text-2xl font-semibold">Minha conta</h1>
+        <p class="font-extralight text-sm">Gerencie as suas informações</p>
+
+        <div class="flex mt-5 mb-5 rounded-full mt-5 mb-5 ">
+            <img class="rounded-full object-cover w-45 h-45" src="../../imgs/Diego.jpg" alt="fotoDoParceiro">
+        </div>
+        <div class="w-full flex flex-col gap-6">
+            <div class="border-b border-white">
+                <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
+                    placeholder="Nome de Usuário">
+            </div>
+            <div class="border-b border-white">
+                <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
+                    placeholder="Nome Completo">
+            </div>
+            <div class="border-b border-white">
+                <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="CPF">
+            </div>
+            <div class="border-b border-white">
+                <input class="w-full outline-none text-gray-400 font-thin text-sm" type="date" name="" id="">
+            </div>
+        </div>
+    </div>
 
 </body>
 
