@@ -14,8 +14,7 @@
         }
     </style>
 </head>
-
-<body class="bg-[#272032]">
+<body class="bg-[#1A1423] text-[#fff]">
     <nav class="bg-zinc-900 px-8 py-4">
         <div class="flex justify-between items-center w-full">
             <!-- Logo -->
@@ -24,10 +23,8 @@
             <!-- Links de navegação -->
             <div class="hidden md:flex space-x-4 mx-4 flex-grow">
                 <a href="../index.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Página Inicial</a>
-                <a href="../pages/sobre.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Sobre o
-                    Projeto</a>
-                <a href="../pages/sobre.html"
-                    class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Desenvolvedores</a>
+                <a href="../pages/sobre.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Sobre o Projeto</a>
+                <a href="../desenvolvedores.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Desenvolvedores</a>
             </div>
 
             <!-- Botões de login/cadastro -->
@@ -49,6 +46,48 @@
         </div>
     </nav>
 
+    <!-- Versão Mobile -->
+    <div id="mobile-menu" class="hidden bg-zinc-900 w-1/2 float-end at-2 me-2 py-4 shadow-lg">
+        <div class="flex flex-col text-white space-y-4 px-4 text-left">
+            <a href="../../pages/usuarios/perfil-usuario.html" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-regular fa-user"></i>Minha conta</a>
+            <a href="../../pages/usuarios/favoritos-usuario.html" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-regular fa-heart"></i>Favoritos</a>
+            <a href="#" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-clock-rotate-left"></i>Histórico</a>
+
+            <div class="border-b-1 border-white-700 w-6/7 mx-auto"></div>
+            <a href="" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-house-user"></i>Minha conta</a>
+            <a href="#" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-regular fa-folder-open"></i>Favoritos</a>
+            <div class="border-b-1 border-white-700 w-6/7 mx-auto"></div>
+            <a href="" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-shield-halved"></i>Minha Conta</a>
+            <a href="../../pages/admin/dashboard.html" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-desktop"></i>Painel Administrador</a>
+
+            <div class="border-b-1 border-white-700 w-6/7 mx-auto"></div>
+            <a href="" class="w-full text-white hover:bg-[#DB2763] px-3 py-2 rounded flex items-center gap-4"><i
+                    class="fa-solid fa-arrow-left"></i>Sair</a>
+        </div>
+    </div>
+
+    <!--JavaScript-->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.replace('fa-bars', 'fa-xmark');
+            } else {
+                icon.classList.replace('fa-xmark', 'fa-bars');
+            }
+        });
+    </script>
+</body>
     <!-- Versão Mobile -->
     <div id="mobile-menu" class="hidden bg-zinc-900 w-1/2 float-end at-2 me-2 py-4 shadow-lg">
         <div class="flex flex-col text-white space-y-4 px-4 text-left">
@@ -395,7 +434,7 @@
             <!-- Direitos reservados -->
             <div class="text-center text-gray-400 text-xs sm:text-sm">
                 Todos os direitos reservados
-            </div>
+            </div> 
         </div>
     </footer>
 
