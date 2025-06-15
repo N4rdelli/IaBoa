@@ -22,13 +22,13 @@
 </style>
 
 <body class="bg-[#1A1423] text-white">
-
-    <div class="flex flex-col items-center mt-10">
+    <!-- INCIO CONTAINER -->
+    <div class="flex flex-col items-center mt-8 gap-4">
 
         <h1 class="text-2xl font-semibold">Minha conta</h1>
         <p class="font-extralight text-sm">Gerencie as suas informações</p>
 
-        <div class="flex mt-5 mb-5 rounded-full mt-5 mb-5 ">
+        <div class="flex mt-4 mb-4 rounded-full">
             <img class="rounded-full object-cover w-45 h-45" src="../../imgs/Diego.jpg" alt="fotoDoParceiro">
         </div>
 
@@ -38,49 +38,67 @@
                 <!-- INPUTS INFORMAÇÕES PESSOAIS -->
                 <h2 class="font-medium">Informações Pessoais</h2>
                 <div class="flex border-b border-white gap-2">
-                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-pen-to-square ml-2"></i>
                     <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
                         placeholder="Nome de Usuário">
                 </div>
                 <div class="flex border-b border-white gap-2">
-                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-pen-to-square ml-2"></i>
                     <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
                         placeholder="Nome Completo">
                 </div>
                 <div class="flex border-b border-white gap-2">
-                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-user ml-2"></i>
                     <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="CPF">
                 </div>
-                <div class="border-b border-white">
-                    <input class="w-full outline-none text-gray-400 font-thin text-sm" type="date" name="" id="">
-                    <i class="fa-solid fa-calendar-days"></i>
+                <div class="flex border-b border-white">
+                    <input class="w-full outline-none text-gray-400 font-thin text-sm uppercase" type="date" name=""
+                        id="">
+                    <i class="fa-solid fa-calendar-days mr-4"></i>
                 </div> <!-- FIM INPUTS INFORMAÇÕES PESSOAIS -->
             </div>
+
             <!-- INPUTS PARA CONTATO -->
             <div class="w-full flex flex-col gap-6">
                 <h2 class="font-medium">Informações Pessoais</h2>
                 <div class="flex border-b border-white gap-2">
-                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-regular fa-envelope ml-2"></i>
                     <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="Email">
                 </div>
                 <div class="flex border-b border-white gap-2">
-                    <i class="fa-solid fa-mobile-screen"></i>
+                    <i class="fa-solid fa-mobile-screen ml-2"></i>
                     <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
                         placeholder="Telefone Celular">
                 </div>
                 <div class="flex border-b border-white gap-2">
-                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-instagram ml-2"></i>
                     <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
                         placeholder="Instagram">
                 </div>
                 <div class="flex border-b border-white gap-2">
-                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-tiktok ml-2"></i>
                     <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="TikTok">
                 </div> <!-- INPUTS PARA CONTATO -->
 
             </div>
         </div>
+        <div class="flex items-center justify-center w-40 border border-white rounded-full p-2 gap-1">
+            <i class="fa-solid fa-pencil"></i>
+            <p class="text-sm font-thin">Editar informações</p>
+        </div>
+        <div class="flex gap-4">
+            <div class="flex items-center gap-2 border-b border-[#FFD83E]">
+                <i class="fa-solid fa-arrow-left"></i>
+                <p class="font-thin text-[#FFD83E] text-sm">Encerrar sessão</p>
+            </div>
+            <div class="flex items-center gap-2 border-b border-[#DB2763]">
+                <i class="fa-solid fa-arrow-left"></i>
+                <p class="font-thin text-[#DB2763] text-sm">Excluir conta</p>
+                <i class="fa-regular fa-trash-can"></i>
+            </div>
+        </div>
 
+    </div><!-- FIM CONTAINER -->
 </body>
 
 </html>
