@@ -17,7 +17,36 @@
 
 <body>
 
-  <navbar-iaboa></navbar-iaboa>
+      <nav class="bg-zinc-900 px-8 py-4">
+        <div class="flex justify-between items-center w-full">
+            <!-- Logo -->
+            <a href="" class="text-white text-lg font bold"></a>
+
+            <!-- Links de navegação -->
+            <div class="hidden md:flex space-x-4 mx-4 flex-grow">
+                <a href="/index.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Página Inicial</a>
+                <a href="/pages/sobre.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Sobre o Projeto</a>
+                <a href="/pages/desenvolvedores.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Desenvolvedores</a>
+            </div>
+
+            <!-- Botões de login/cadastro -->
+            <div class="flex gap-3">
+                <div class="hidden md:block hover:text-zinc-900">
+                    <a href="#"
+                        class="text-white hover:bg-white-900 border border-white transition-colors duration-300 px-4 py-2 rounded">Cadastre-se</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#"
+                        class="text-white bg-[#DB2763] hover:bg-[#B01D4F] px-4 py-2 rounded transition-colors duration-200">Login</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
   <!-- Master Head: em display flex column para ajudar no processo de centralização do texto em relação a div. Testando manualmente os tamanhos "96" foi o mais próximo do resultado do figma e a cor preta é placeholder até eu pegar a imagem utilizada no figma-->
   <div class="w-full flex flex-col h-96 justify-center bg-[#1A1423] bg-[url('imgs/Fundo-iaboa.png')] bg-repeat md:bg-[length:100%_auto] bg-[position:0px_-500px]"> 
@@ -35,7 +64,7 @@
     </div>
     <!-- Botão: o maior diferencial do botão é que eu coloquei manualmente um px e py que eu achei que fosse o mais próximo do figma, adicionei uma variavel especifica pra cor do botão (roxo) e o rounded pras borda. -->
     <div class="w-full flex mt-6 justify-center items-baseline text-center ">
-      <a href="#" class="px-16 py-3 bg-[#574AE2] text-white rounded-3xl">Procure um rolê <img
+      <a href="/pages/roles/listar-roles.html" class="px-16 py-3 bg-[#574AE2] text-white rounded-3xl">Procure um rolê <img
           class="inline align-center pl-2" src="imgs/Super seta.svg"></a>
     </div>
   </div>
@@ -188,8 +217,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg">
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
+                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -237,8 +266,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg">
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -287,8 +316,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg">
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -402,8 +431,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg">
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -451,8 +480,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg">
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -501,8 +530,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg">
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -512,7 +541,7 @@
 
 
           <!-- Molde 7-->
-          <div class="h-45 w-100 md:w-135 max-w-[655px] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
+          <div class="h-45 w-100 md:w-135 max-w-[50%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
             <!-- Imagem 7-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -552,8 +581,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg">
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -572,7 +601,7 @@
         <!-- Wrapper dos containers 3 -->
         <div class="flex flex-row flex-wrap justify-center md:justify-start">
             <!-- Molde 8-->
-          <div class="h-45 w-100 md:w-135 max-w-[650px] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
+          <div class="h-45 w-100 md:w-135 max-w-[50%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
             <!-- Imagem 8-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -612,8 +641,8 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg">
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
