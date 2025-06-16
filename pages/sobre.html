@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
      <!-- CDN Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/css/style.css">
 
     <title>Sobre</title>
 </head>
 <body>
     <!-- Implementando a navbar componentizada -->
-    <navbar-iaboa></navbar-iaboa>
+    <nav class="bg-zinc-900 px-8 py-4">
+        <div class="flex justify-between items-center w-full">
+            <!-- Logo -->
+            <a href="" class="text-white text-lg font bold"></a>
+
+            <!-- Links de navegação -->
+            <div class="hidden md:flex space-x-4 mx-4 flex-grow">
+                <a href="/index.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Página Inicial</a>
+                <a href="/pages/sobre.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Sobre o Projeto</a>
+                <a href="/pages/desenvolvedores.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Desenvolvedores</a>
+            </div>
+
+            <!-- Botões de login/cadastro -->
+            <div class="flex gap-3">
+                <div class="hidden md:block hover:text-zinc-900">
+                    <a href="#"
+                        class="text-white hover:bg-white-900 border border-white transition-colors duration-300 px-4 py-2 rounded">Cadastre-se</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#"
+                        class="text-white bg-[#DB2763] hover:bg-[#B01D4F] px-4 py-2 rounded transition-colors duration-200">Login</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <br>
     <h1>Sobre o Projeto</h1>

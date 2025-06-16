@@ -8,3 +8,5 @@ body{
     background-image: url(/imgs/Section\ Hero.svg);
     object-fit: cover;
 }
+
+nav {font-size: 16;}
