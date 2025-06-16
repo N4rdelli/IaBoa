@@ -17,39 +17,41 @@
 
 <body>
 
-      <nav class="bg-zinc-900 px-8 py-4">
-        <div class="flex justify-between items-center w-full">
-            <!-- Logo -->
-            <a href="" class="text-white text-lg font bold"></a>
+  <nav class="bg-zinc-900 px-8 py-4">
+    <div class="flex justify-between items-center w-full">
+      <!-- Logo -->
+      <a href="" class="text-white text-lg font bold"></a>
 
-            <!-- Links de navegação -->
-            <div class="hidden md:flex space-x-4 mx-4 flex-grow">
-                <a href="/index.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Página Inicial</a>
-                <a href="/pages/sobre.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Sobre o Projeto</a>
-                <a href="/pages/desenvolvedores.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Desenvolvedores</a>
-            </div>
+      <!-- Links de navegação -->
+      <div class="hidden md:flex space-x-4 mx-4 flex-grow">
+        <a href="/index.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Página Inicial</a>
+        <a href="/pages/sobre.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Sobre o Projeto</a>
+        <a href="/pages/desenvolvedores.html"
+          class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Desenvolvedores</a>
+      </div>
 
-            <!-- Botões de login/cadastro -->
-            <div class="flex gap-3  ">
-                <div class="hidden md:block hover:text-zinc-900">
-                    <a href="/pages/autenticacao/cadastrar-usuario.html"
-                        class="text-white hover:bg-white-900 border border-white transition-colors duration-300 px-4 py-2 rounded">Cadastre-se</a>
-                </div>
-                <div class="hidden md:block">
-                    <a href="/pages/autenticacao/entrar.html"
-                        class="text-white bg-[#DB2763] hover:bg-[#B01D4F] px-4 py-2 rounded transition-colors duration-200">Login</a>
-                </div>
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-white">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-            </div>
+      <!-- Botões de login/cadastro -->
+      <div class="flex gap-3  ">
+        <div class="hidden md:block hover:text-zinc-900">
+          <a href="/pages/autenticacao/cadastrar-usuario.html"
+            class="text-white hover:bg-white-900 border border-white transition-colors duration-300 px-4 py-2 rounded">Cadastre-se</a>
         </div>
-      </nav>
+        <div class="hidden md:block">
+          <a href="/pages/autenticacao/entrar.html"
+            class="text-white bg-[#DB2763] hover:bg-[#B01D4F] px-4 py-2 rounded transition-colors duration-200">Login</a>
+        </div>
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
 
   <!-- Master Head: em display flex column para ajudar no processo de centralização do texto em relação a div. Testando manualmente os tamanhos "96" foi o mais próximo do resultado do figma e a cor preta é placeholder até eu pegar a imagem utilizada no figma-->
-  <div class="w-full flex flex-col h-96 justify-center bg-[#1A1423] bg-[url('imgs/Fundo-iaboa.png')] bg-repeat md:bg-[length:100%_auto] bg-[position:0px_-500px]"> 
+  <div
+    class="w-full flex flex-col h-96 justify-center bg-[#1A1423] bg-[url('imgs/Fundo-iaboa.png')] bg-repeat md:bg-[length:100%_auto] bg-[position:0px_-500px]">
     <!-- Texto superior: além do já explicado, items baseline foi a forma que eu achei de igualar a distância vertical do TEXTO de diferente tamanho sem estragar a centralização inicial -->
     <div class="flex flex-wrap md:flex-nowrap justify-center items-baseline text-white ">
       <h1 class="text-6xl text-center font-semibold">I a Boa</h1>
@@ -87,18 +89,17 @@
         Escolha do I a Boa
       </p>
       <div class="text-center flex-inline">
-      <p class="text-center py-6">
-        As melhores recomendações de rolê da cidade!
-        <span class="hidden md:inline-flex text-center"> 
-        Ainda não sabe pra onde ir? Tenta uma das nossas indicações!
+        <p class="text-center py-6">
+          As melhores recomendações de rolê da cidade!
+          <span class="hidden md:inline-flex text-center">
+            Ainda não sabe pra onde ir? Tenta uma das nossas indicações!
 
-      </span>
-      </p>
-      
+          </span>
+        </p>
+
       </div>
       <!-- Wrapper pros cards-->
-      <div
-        class="flex flex-wrap justify-center gap-8 mx-5 my-2.5 md:mx-10 md:my-5 xl:mx-20 xl:my-10 xl:flex-nowrap">
+      <div class="flex flex-wrap justify-center gap-8 mx-5 my-2.5 md:mx-10 md:my-5 xl:mx-20 xl:my-10 xl:flex-nowrap">
         <!-- Card molde 1 -->
         <div class="h-107 xl:min-w-sm w-78 xl:w-1/3 rounded-b-2xl bg-[#272032]">
           <!-- Card cor 1 (pra por img dps)-->
@@ -203,22 +204,25 @@
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
                   </div>
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
                   </div>
 
                 </div>
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
+                  <a href="/pages/roles/detalhes-role.html"><img
+                      class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button-Seta-Rosa.svg">
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -252,22 +256,25 @@
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
                   </div>
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
                   </div>
 
                 </div>
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
+                  <a href="/pages/roles/detalhes-role.html"><img
+                      class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button-Seta-Rosa.svg">
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -302,22 +309,25 @@
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
                   </div>
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
                   </div>
 
                 </div>
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
+                  <a href="/pages/roles/detalhes-role.html"><img
+                      class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button-Seta-Rosa.svg">
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -354,21 +364,21 @@
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
                   </div>
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
                   </div>
 
                 </div>
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
+                  <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg">
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg">
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
@@ -417,22 +427,25 @@
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
                   </div>
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
                   </div>
 
                 </div>
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
+                  <a href="/pages/roles/detalhes-role.html"><img
+                      class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button-Seta-Rosa.svg">
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -466,22 +479,25 @@
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
                   </div>
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
                   </div>
 
                 </div>
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
+                  <a href="/pages/roles/detalhes-role.html"><img
+                      class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button-Seta-Rosa.svg">
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -516,22 +532,25 @@
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
                   </div>
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
                   </div>
 
                 </div>
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
+                  <a href="/pages/roles/detalhes-role.html"><img
+                      class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button-Seta-Rosa.svg">
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -567,22 +586,25 @@
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
                   </div>
                   <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
+                    <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
+                    <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
+                    <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
                   </div>
 
                 </div>
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
+                  <a href="/pages/roles/detalhes-role.html"><img
+                      class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button-Seta-Rosa.svg">
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150"
+                      src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
 
@@ -594,113 +616,117 @@
         </div>
 
         <!-- Wrapper com texto 3 -->
-      <div class="flex flex-col flex-wrap justify-center mb-6">
-        <p class="text-2xl xl:mt-4 xl:pr-4 xl:mx-4 xl:mb-8 font-semibold text-white text-center xl:text-left">
-          Domingo, 18 de Maio de 2025.
-        </p>
-        <!-- Wrapper dos containers 3 -->
-        <div class="flex flex-row flex-wrap gap-2 justify-center">
+        <div class="flex flex-col flex-wrap justify-center mb-6">
+          <p class="text-2xl xl:mt-4 xl:pr-4 xl:mx-4 xl:mb-8 font-semibold text-white text-center xl:text-left">
+            Domingo, 18 de Maio de 2025.
+          </p>
+          <!-- Wrapper dos containers 3 -->
+          <div class="flex flex-row flex-wrap gap-2 justify-center">
             <!-- Molde 8-->
-          <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
-            <!-- Imagem 8-->
-            <div class="h-45 w-45 md:w-1/3 bg-white">
-
-            </div>
-            <!-- Espaço com informações-->
-            <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-              <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                <!-- Texto titulo-->
-                <h4 class="text-2xl text-white font-semibold">
-                  After do Baco
-                </h4>
-                <!-- Horário -->
-                <div class="flex flex-row items-center">
-                  <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                </div>
-                <!-- Local-->
-                <div class="flex flex-row items-center">
-                  <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                </div>
-                <!-- Categorias -->
-                <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
-                  <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                  </div>
-                  <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                  </div>
-
-                </div>
-                <!--Ponteiro-->
-                <!-- Monta a posição absoluta do ponteiro na direita-->
-                <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
-                </div>
+            <div
+              class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
+              <!-- Imagem 8-->
+              <div class="h-45 w-45 md:w-1/3 bg-white">
 
               </div>
+              <!-- Espaço com informações-->
+              <div class="h-45 w-55 md:w-2/3 overflow-hidden">
+                <!-- Div organizadora-->
+                <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
+                  <!-- Texto titulo-->
+                  <h4 class="text-2xl text-white font-semibold">
+                    After do Baco
+                  </h4>
+                  <!-- Horário -->
+                  <div class="flex flex-row items-center">
+                    <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
+                    <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
+                  </div>
+                  <!-- Local-->
+                  <div class="flex flex-row items-center">
+                    <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
+                    <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
+                  </div>
+                  <!-- Categorias -->
+                  <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
+                    <div class="relative flex flex-row self-end">
+                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
+                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
+                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
+                    </div>
+                    <div class="relative flex flex-row self-end">
+                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
+                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
+                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
+                    </div>
+
+                  </div>
+                  <!--Ponteiro-->
+                  <!-- Monta a posição absoluta do ponteiro na direita-->
+                  <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
+                    <a href="/pages/roles/detalhes-role.html"><img
+                        class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150"
+                        src="imgs/Button-Seta-Rosa.svg">
+                      <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150"
+                        src="imgs/Button Seta.svg"> </a>
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
+                  </div>
+
+                </div>
+              </div>
             </div>
-          </div>
 
 
             <!-- Molde fantasma 2-->
-          <div
-            class="md:my-8 h-0 md:h-45 md:w-100 md:w-135 xl:pr-4 xl:mx-4 md:max-w-[45%] flex-grow max-w-1/2 bg-[#272032] flex relative invisible pointer-events-none">
-            <!-- Imagem fantasma 2-->
-            <div class="h-45 w-45 md:w-1/3 bg-white">
-
-            </div>
-            <!-- Espaço com informações-->
-            <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-              <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                <!-- Texto titulo-->
-                <h4 class="text-2xl text-white font-semibold">
-                  After do Baco
-                </h4>
-                <!-- Horário -->
-                <div class="flex flex-row items-center">
-                  <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                </div>
-                <!-- Local-->
-                <div class="flex flex-row items-center">
-                  <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                </div>
-                <!-- Categorias -->
-                <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
-                  <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                  </div>
-                  <div class="relative flex flex-row self-end">
-                  <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                  <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
-                  <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                  </div>
-
-                </div>
-                <!--Ponteiro-->
-                <!-- Monta a posição absoluta do ponteiro na direita-->
-                <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg"> 
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg">
-                  <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
-                </div>
+            <div
+              class="md:my-8 h-0 md:h-45 md:w-100 md:w-135 xl:pr-4 xl:mx-4 md:max-w-[45%] flex-grow max-w-1/2 bg-[#272032] flex relative invisible pointer-events-none">
+              <!-- Imagem fantasma 2-->
+              <div class="h-45 w-45 md:w-1/3 bg-white">
 
               </div>
+              <!-- Espaço com informações-->
+              <div class="h-45 w-55 md:w-2/3 overflow-hidden">
+                <!-- Div organizadora-->
+                <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
+                  <!-- Texto titulo-->
+                  <h4 class="text-2xl text-white font-semibold">
+                    After do Baco
+                  </h4>
+                  <!-- Horário -->
+                  <div class="flex flex-row items-center">
+                    <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
+                    <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
+                  </div>
+                  <!-- Local-->
+                  <div class="flex flex-row items-center">
+                    <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
+                    <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
+                  </div>
+                  <!-- Categorias -->
+                  <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
+                    <div class="relative flex flex-row self-end">
+                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
+                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização">
+                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
+                    </div>
+                    <div class="relative flex flex-row self-end">
+                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
+                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização">
+                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
+                    </div>
+
+                  </div>
+                  <!--Ponteiro-->
+                  <!-- Monta a posição absoluta do ponteiro na direita-->
+                  <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
+                    <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg">
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg">
+                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
+                  </div>
+
+                </div>
+              </div>
             </div>
-          </div>
 
 
           </div>
@@ -725,7 +751,7 @@
 
       <!-- Wrapper geral-->
       <div class="flex flex-col flex-wrap justify-center items-center max-w-[1700px] h-auto xl:h-80 bg-[#1A1423]">
- 
+
         <!-- Texto titulo / Ambientação -->
         <div class="w-full md:w-[45%] pl-2.5 md:pl-5 xl:w-1/4">
           <p class="text-white font-semibold">
@@ -865,36 +891,36 @@
           </div>
 
           <div class="w-[90%] h-[20%] my-1 rounded-2xl bg-[#272032]">
-                        <div class=" flex flex-row items-center justify-start w-[94%] h-[100%] rounded-2xl mx-1
+            <div class=" flex flex-row items-center justify-start w-[94%] h-[100%] rounded-2xl mx-1
             bg-[#272032]">
-            <span class="text-[16px] ml-3 my-3 text-[#fff] font-semibold">Sabádo, 7 de Junho de 2025</span>
+              <span class="text-[16px] ml-3 my-3 text-[#fff] font-semibold">Sabádo, 7 de Junho de 2025</span>
+            </div>
+          </div>
+
+          <div class="w-[90%] h-[20%] my-1 rounded-2xl bg-[#272032]">
+            <div class="flex flex-row items-center justify-start w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
+              <span class="text-[16px] ml-3 my-3 text-[#fff] font-semibold">Domingo, 8 de Junho de 2025</span>
+            </div>
           </div>
         </div>
 
-        <div class="w-[90%] h-[20%] my-1 rounded-2xl bg-[#272032]">
-          <div class="flex flex-row items-center justify-start w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
-            <span class="text-[16px] ml-3 my-3 text-[#fff] font-semibold">Domingo, 8 de Junho de 2025</span>
-          </div>
-        </div>
       </div>
 
+
     </div>
-
-
-  </div>
   </div>
 
   <!-- Newsletter -->
-  <div class="w-full h-auto bg-[#1A1423] bg-[url(imgs/Fundo-iaboa.png)] bg-repeat  bg-[length:100%_auto] bg-[position:0px_-500px] text-white">
+  <div
+    class="w-full h-auto bg-[#1A1423] bg-[url(imgs/Fundo-iaboa.png)] bg-repeat  bg-[length:100%_auto] bg-[position:0px_-500px] text-white">
     <h3 class="text-3xl text-center font-semibold pt-12 pb-4">Não tá afim de perder nenhuma novidade?</h3>
     <h5 class="text-xl text-center pb-6">Se inscreva na nossa <b class="font-semibold">Newsletter</b>. É a
       garantia de que você vai estar por dentro de tudo!</h5>
     <div class="flex max-w-md md:max-w-2xl justify-self-center items-center w-full sm:w-296 h-28 bg-[#272032] ">
       <!-- Super input-->
       <div class="flex flex-grow mx-8 w-230 h-12 bg-white">
-        <input type="text" placeholder="Seu melhor email aqui!"
-          class="w-full ml-4 text-sm text-black outline-none">
-      </div> 
+        <input type="text" placeholder="Seu melhor email aqui!" class="w-full ml-4 text-sm text-black outline-none">
+      </div>
       <!-- Super botão-->
       <div class="flex flex-shrink-0 mr-8 w-42 h-12 bg-[#DB2763] justify-center items-center">
         <a class="text-center font-semibold text-xl" href="#">Inscrever-se</a>
@@ -903,6 +929,56 @@
     </div>
 
   </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#110E15] py-8">
+    <div class="container mx-auto px-4">
+      <!-- Conteúdo principal -->
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0 lg:h-[120px]">
+        <!-- Esquerda - Logo -->
+        <div class="flex items-center justify-center h-full">
+          <span class="text-white text-2xl font-bold">I a Boa?</span>
+        </div>
+
+        <!-- Centro - Links -->
+        <div class="flex items-center justify-center h-full">
+          <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-white">
+            <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">Link Footer 1</a>
+            <span class="text-gray-500 hidden sm:inline">|</span>
+            <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">Link 2</a>
+            <span class="text-gray-500 hidden sm:inline">|</span>
+            <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">Terceiro link</a>
+            <span class="text-gray-500 hidden sm:inline">|</span>
+            <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">4 link</a>
+          </div>
+        </div>
+
+        <!-- Direita - Redes Sociais -->
+        <div class="flex flex-col items-center justify-center h-full">
+          <h3 class="text-white mb-3 text-sm sm:text-base">Nos siga nas redes sociais!</h3>
+          <div class="flex justify-center space-x-4 sm:space-x-6">
+            <a href="#" class="text-white hover:text-[#574AE2] text-lg sm:text-xl transition-colors">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-white hover:text-[#574AE2] text-lg sm:text-xl transition-colors">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-white hover:text-[#574AE2] text-lg sm:text-xl transition-colors">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linha divisória -->
+      <div class="border-t border-gray-700 w-full sm:w-3/4 mx-auto my-6"></div>
+
+      <!-- Direitos reservados -->
+      <div class="text-center text-gray-400 text-xs sm:text-sm">
+        Todos os direitos reservados
+      </div>
+    </div>
+  </footer>
 
   <!-- Script main.js -->
   <script src="./js/main.js"></script>
