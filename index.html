@@ -32,11 +32,11 @@
             <!-- Botões de login/cadastro -->
             <div class="flex gap-3  ">
                 <div class="hidden md:block hover:text-zinc-900">
-                    <a href="#"
+                    <a href="/pages/autenticacao/cadastrar-usuario.html"
                         class="text-white hover:bg-white-900 border border-white transition-colors duration-300 px-4 py-2 rounded">Cadastre-se</a>
                 </div>
                 <div class="hidden md:block">
-                    <a href="#"
+                    <a href="/pages/autenticacao/entrar.html"
                         class="text-white bg-[#DB2763] hover:bg-[#B01D4F] px-4 py-2 rounded transition-colors duration-200">Login</a>
                 </div>
                 <div class="md:hidden">
@@ -64,7 +64,7 @@
     </div>
     <!-- Botão: o maior diferencial do botão é que eu coloquei manualmente um px e py que eu achei que fosse o mais próximo do figma, adicionei uma variavel especifica pra cor do botão (roxo) e o rounded pras borda. -->
     <div class="w-full flex mt-6 justify-center items-baseline text-center ">
-      <a href="/pages/roles/listar-roles.html" class="px-16 py-3 bg-[#574AE2] text-white rounded-3xl">Procure um rolê <img
+      <a href="#roles" class="px-16 py-3 bg-[#574AE2] text-white rounded-3xl">Procure um rolê <img
           class="inline align-center pl-2" src="imgs/Super seta.svg"></a>
     </div>
   </div>
@@ -160,7 +160,7 @@
   </div>
 
   <!-- Próximos Rolês -->
-  <div class="w-full flex justify-center gap-8 h-auto bg-[#1A1423]">
+  <div class="w-full flex justify-center gap-8 h-auto bg-[#1A1423]" id="roles">
     <!-- Container 1-->
     <div class="container-sm mx-auto px-2 xl:px-4 bg-[#1A1423] text-white">
       <p class="text-5xl text-center pt-3 xl:pt-6 font-semibold justify-center">
@@ -171,13 +171,13 @@
       </p>
       <!-- Wrapper com texto 1 -->
       <div class="flex flex-col flex-wrap justify-center mb-6">
-        <p class="text-2xl xl:mt-4 xl:pr-4 xl:mx-4 xl:mb-8 font-semibold text-white text-center md:text-left">
+        <p class="text-2xl xl:mt-4 xl:pr-4 xl:mx-4 xl:mb-8 font-semibold text-white text-center xl:text-left">
           Sexta Feira, 16 de Maio de 2025.
         </p>
         <!-- Wrapper dos containers 1 -->
-        <div class="flex flex-row flex-wrap justify-center md:justify-start">
+        <div class="flex flex-row flex-wrap gap-2 justify-center">
           <!-- Molde 1-->
-          <div class="h-45 w-100 md:w-135 my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
+          <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
             <!-- Imagem 1-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -185,7 +185,7 @@
             <!-- Espaço com informações-->
             <div class="h-45 w-55 md:w-2/3 overflow-hidden">
               <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 md:px-4.5">
+              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
                 <!-- Texto titulo-->
                 <h4 class="text-2xl text-white font-semibold">
                   After do Baco
@@ -193,12 +193,12 @@
                 <!-- Horário -->
                 <div class="flex flex-row items-center">
                   <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 mx-1.5">20:00 - 05:00</p>
+                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
                 </div>
                 <!-- Local-->
                 <div class="flex flex-row items-center">
                   <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 mx-1.5">Baco Bar Gastronomia</p>
+                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
                 </div>
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
@@ -217,7 +217,7 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110" src="imgs/Button-Seta-Rosa.svg"> 
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
@@ -226,7 +226,7 @@
             </div>
           </div>
           <!-- Molde 2-->
-          <div class="h-45 w-100 md:w-135 my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
+          <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
             <!-- Imagem 2-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -234,7 +234,7 @@
             <!-- Espaço com informações-->
             <div class="h-45 w-55 md:w-2/3 overflow-hidden">
               <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 md:px-4.5">
+              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
                 <!-- Texto titulo-->
                 <h4 class="text-2xl text-white font-semibold">
                   After do Baco
@@ -242,12 +242,12 @@
                 <!-- Horário -->
                 <div class="flex flex-row items-center">
                   <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 mx-1.5">20:00 - 05:00</p>
+                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
                 </div>
                 <!-- Local-->
                 <div class="flex flex-row items-center">
                   <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 mx-1.5">Baco Bar Gastronomia</p>
+                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
                 </div>
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
@@ -266,7 +266,7 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110" src="imgs/Button-Seta-Rosa.svg"> 
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
                     <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
@@ -276,7 +276,7 @@
           </div>
 
           <!-- Molde 3-->
-          <div class="h-45 w-100 md:w-135 my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
+          <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
             <!-- Imagem 3-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -284,7 +284,7 @@
             <!-- Espaço com informações-->
             <div class="h-45 w-55 md:w-2/3 overflow-hidden">
               <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 md:px-4.5">
+              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
                 <!-- Texto titulo-->
                 <h4 class="text-2xl text-white font-semibold">
                   After do Baco
@@ -292,12 +292,12 @@
                 <!-- Horário -->
                 <div class="flex flex-row items-center">
                   <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 mx-1.5">20:00 - 05:00</p>
+                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
                 </div>
                 <!-- Local-->
                 <div class="flex flex-row items-center">
                   <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 mx-1.5">Baco Bar Gastronomia</p>
+                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
                 </div>
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
@@ -316,7 +316,7 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110" src="imgs/Button-Seta-Rosa.svg"> 
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
                     <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
@@ -328,7 +328,7 @@
           <!-- Os moldes "solitários" acabavam perdendo a proporção com o flex-grow que eu estabeleci, e por isso eu adicionei um invisivel de código igual que vai funcionar efetivamente só pra alinhar os solitários com os acima-->
           <!-- Molde fantasma 1-->
           <div
-            class="md:my-8 h-0 md:h-45 md:w-100 md:w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative invisible pointer-events-none">
+            class="md:my-8 h-0 md:h-45 md:w-100 md:w-135 md:max-w-[45%] xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative invisible pointer-events-none">
             <!-- Imagem fantasma-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -336,7 +336,7 @@
             <!-- Espaço com informações-->
             <div class="h-45 w-55 md:w-2/3 overflow-hidden">
               <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 md:px-4.5">
+              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
                 <!-- Texto titulo-->
                 <h4 class="text-2xl text-white font-semibold">
                   After do Baco
@@ -344,12 +344,12 @@
                 <!-- Horário -->
                 <div class="flex flex-row items-center">
                   <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 mx-1.5">20:00 - 05:00</p>
+                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
                 </div>
                 <!-- Local-->
                 <div class="flex flex-row items-center">
                   <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 mx-1.5">Baco Bar Gastronomia</p>
+                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
                 </div>
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
@@ -385,13 +385,13 @@
 
       <!-- Wrapper com texto 2 -->
       <div class="flex flex-col flex-wrap justify-center mb-6">
-        <p class="text-2xl xl:mt-4 xl:pr-4 xl:mx-4 xl:mb-8 font-semibold text-white text-center md:text-left">
+        <p class="text-2xl xl:mt-4 xl:pr-4 xl:mx-4 xl:mb-8 font-semibold text-white text-center xl:text-left">
           Sábado, 17 de Maio de 2025.
         </p>
         <!-- Wrapper dos containers 2 -->
-        <div class="flex flex-row flex-wrap justify-center md:justify-start">
+        <div class="flex flex-row flex-wrap gap-2 justify-center">
           <!-- Molde 4-->
-          <div class="h-45 w-100 md:w-135 my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
+          <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
             <!-- Imagem 4-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -399,7 +399,7 @@
             <!-- Espaço com informações-->
             <div class="h-45 w-55 md:w-2/3 overflow-hidden">
               <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 md:px-4.5">
+              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
                 <!-- Texto titulo-->
                 <h4 class="text-2xl text-white font-semibold">
                   After do Baco
@@ -407,12 +407,12 @@
                 <!-- Horário -->
                 <div class="flex flex-row items-center">
                   <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 mx-1.5">20:00 - 05:00</p>
+                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
                 </div>
                 <!-- Local-->
                 <div class="flex flex-row items-center">
                   <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 mx-1.5">Baco Bar Gastronomia</p>
+                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
                 </div>
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
@@ -431,7 +431,7 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110" src="imgs/Button-Seta-Rosa.svg"> 
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
                     <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
@@ -440,7 +440,7 @@
             </div>
           </div>
           <!-- Molde 5-->
-          <div class="h-45 w-100 md:w-135 my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
+          <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
             <!-- Imagem 5-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -448,7 +448,7 @@
             <!-- Espaço com informações-->
             <div class="h-45 w-55 md:w-2/3 overflow-hidden">
               <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 md:px-4.5">
+              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
                 <!-- Texto titulo-->
                 <h4 class="text-2xl text-white font-semibold">
                   After do Baco
@@ -456,12 +456,12 @@
                 <!-- Horário -->
                 <div class="flex flex-row items-center">
                   <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 mx-1.5">20:00 - 05:00</p>
+                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
                 </div>
                 <!-- Local-->
                 <div class="flex flex-row items-center">
                   <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 mx-1.5">Baco Bar Gastronomia</p>
+                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
                 </div>
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
@@ -480,7 +480,7 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110" src="imgs/Button-Seta-Rosa.svg"> 
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
                     <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
@@ -490,7 +490,7 @@
           </div>
 
           <!-- Molde 6-->
-          <div class="h-45 w-100 md:w-135 my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
+          <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
             <!-- Imagem 6-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -498,7 +498,7 @@
             <!-- Espaço com informações-->
             <div class="h-45 w-55 md:w-2/3 overflow-hidden">
               <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 md:px-4.5">
+              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
                 <!-- Texto titulo-->
                 <h4 class="text-2xl text-white font-semibold">
                   After do Baco
@@ -506,12 +506,12 @@
                 <!-- Horário -->
                 <div class="flex flex-row items-center">
                   <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 mx-1.5">20:00 - 05:00</p>
+                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
                 </div>
                 <!-- Local-->
                 <div class="flex flex-row items-center">
                   <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 mx-1.5">Baco Bar Gastronomia</p>
+                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
                 </div>
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
@@ -530,7 +530,7 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110" src="imgs/Button-Seta-Rosa.svg"> 
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
                     <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
@@ -541,7 +541,7 @@
 
 
           <!-- Molde 7-->
-          <div class="h-45 w-100 md:w-135 max-w-[50%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
+          <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
             <!-- Imagem 7-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -549,7 +549,7 @@
             <!-- Espaço com informações-->
             <div class="h-45 w-55 md:w-2/3 overflow-hidden">
               <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 md:px-4.5">
+              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
                 <!-- Texto titulo-->
                 <h4 class="text-2xl text-white font-semibold">
                   After do Baco
@@ -557,12 +557,12 @@
                 <!-- Horário -->
                 <div class="flex flex-row items-center">
                   <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 mx-1.5">20:00 - 05:00</p>
+                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
                 </div>
                 <!-- Local-->
                 <div class="flex flex-row items-center">
                   <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 mx-1.5">Baco Bar Gastronomia</p>
+                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
                 </div>
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
@@ -581,7 +581,7 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110" src="imgs/Button-Seta-Rosa.svg"> 
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
                     <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
@@ -595,13 +595,13 @@
 
         <!-- Wrapper com texto 3 -->
       <div class="flex flex-col flex-wrap justify-center mb-6">
-        <p class="text-2xl xl:mt-4 xl:pr-4 xl:mx-4 xl:mb-8 font-semibold text-white text-center md:text-left">
+        <p class="text-2xl xl:mt-4 xl:pr-4 xl:mx-4 xl:mb-8 font-semibold text-white text-center xl:text-left">
           Domingo, 18 de Maio de 2025.
         </p>
         <!-- Wrapper dos containers 3 -->
-        <div class="flex flex-row flex-wrap justify-center md:justify-start">
+        <div class="flex flex-row flex-wrap gap-2 justify-center">
             <!-- Molde 8-->
-          <div class="h-45 w-100 md:w-135 max-w-[50%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
+          <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
             <!-- Imagem 8-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -609,7 +609,7 @@
             <!-- Espaço com informações-->
             <div class="h-45 w-55 md:w-2/3 overflow-hidden">
               <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 md:px-4.5">
+              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
                 <!-- Texto titulo-->
                 <h4 class="text-2xl text-white font-semibold">
                   After do Baco
@@ -617,12 +617,12 @@
                 <!-- Horário -->
                 <div class="flex flex-row items-center">
                   <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 mx-1.5">20:00 - 05:00</p>
+                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
                 </div>
                 <!-- Local-->
                 <div class="flex flex-row items-center">
                   <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 mx-1.5">Baco Bar Gastronomia</p>
+                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
                 </div>
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
@@ -641,7 +641,7 @@
                 <!--Ponteiro-->
                 <!-- Monta a posição absoluta do ponteiro na direita-->
                 <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110" src="imgs/Button-Seta-Rosa.svg"> 
+                  <a href="/pages/roles/detalhes-role.html"><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg"> 
                     <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg"> </a>
                   <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg">
                 </div>
@@ -653,7 +653,7 @@
 
             <!-- Molde fantasma 2-->
           <div
-            class="md:my-8 h-0 md:h-45 md:w-100 md:w-135 xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative invisible pointer-events-none">
+            class="md:my-8 h-0 md:h-45 md:w-100 md:w-135 xl:pr-4 xl:mx-4 md:max-w-[45%] flex-grow max-w-1/2 bg-[#272032] flex relative invisible pointer-events-none">
             <!-- Imagem fantasma 2-->
             <div class="h-45 w-45 md:w-1/3 bg-white">
 
@@ -661,7 +661,7 @@
             <!-- Espaço com informações-->
             <div class="h-45 w-55 md:w-2/3 overflow-hidden">
               <!-- Div organizadora-->
-              <div class="flex h-full flex-col justify-start md:py-6 px-2 md:px-4.5">
+              <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
                 <!-- Texto titulo-->
                 <h4 class="text-2xl text-white font-semibold">
                   After do Baco
@@ -669,12 +669,12 @@
                 <!-- Horário -->
                 <div class="flex flex-row items-center">
                   <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso">
-                  <p class="mt-3 mb-1.5 mx-1.5">20:00 - 05:00</p>
+                  <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
                 </div>
                 <!-- Local-->
                 <div class="flex flex-row items-center">
                   <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização">
-                  <p class="mt-1.5 md:mb-3 mx-1.5">Baco Bar Gastronomia</p>
+                  <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
                 </div>
                 <!-- Categorias -->
                 <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center ">
@@ -725,6 +725,7 @@
 
       <!-- Wrapper geral-->
       <div class="flex flex-col flex-wrap justify-center items-center max-w-[1700px] h-auto xl:h-80 bg-[#1A1423]">
+ 
         <!-- Texto titulo / Ambientação -->
         <div class="w-full md:w-[45%] pl-2.5 md:pl-5 xl:w-1/4">
           <p class="text-white font-semibold">
@@ -737,14 +738,14 @@
           <div class="w-[45%] h-[45%] my-1 rounded-2xl bg-[#272032]">
             <div class="flex flex-col items-center justify-center w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
               <img class="w-8 h-8 my-3" src="imgs/Local bar Rosa.svg">
-              <span class="font-size[16px] my-3 text-[#DB2763]">Bar/Pub</span>
+              <span class="text-[16px] my-3 text-[#DB2763]">Bar/Pub</span>
             </div>
           </div>
 
           <div class="w-[45%] h-[45%] my-1 rounded-2xl bg-[#272032]">
             <div class="flex flex-col items-center justify-center w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
               <img class="w-8 h-8 my-3" src="imgs/Local bar Roxa.svg">
-              <span class="font-size[16px] my-3 text-[#574AE2]">Balada/Pub</span>
+              <span class="text-[16px] my-3 text-[#574AE2]">Balada/Pub</span>
             </div>
           </div>
 
@@ -776,14 +777,14 @@
           <div class="w-[90%] h-[20%] my-1 rounded-2xl bg-[#272032]">
             <div class="flex flex-row items-center justify-start w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
               <img class="w-4 h-4 ml-2 mr-3 my-3" src="imgs/Local bar Rosa.svg">
-              <span class="font-size[16px] my-3 text-[#DB2763]">Padrão</span>
+              <span class="text-[16px] my-3 text-[#DB2763]">Padrão</span>
             </div>
           </div>
 
           <div class="w-[90%] h-[20%] my-1 rounded-2xl bg-[#272032]">
             <div class="flex flex-row items-center justify-start w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
               <img class="w-4 h-4 ml-2 mr-3 my-3" src="imgs/Local bar Roxa.svg">
-              <span class="font-size[16px] my-3 text-[#574AE2]">Emo</span>
+              <span class="text-[16px] my-3 text-[#574AE2]">Emo</span>
             </div>
           </div>
 
@@ -803,7 +804,7 @@
         </div>
 
         <!-- Texto titulo / Tipo de rolê -->
-        <div class="w-auto md:w-[45%] pl-2.5 xl:pl-5 xl:w-1/4">
+        <div class="w-full md:w-[45%] pl-2.5 xl:pl-5 xl:w-1/4">
           <p class="text-white font-semibold">
             Tipo de rolê
           </p>
@@ -814,21 +815,21 @@
           <div class="w-[45%] h-[45%] my-1 rounded-2xl bg-[#272032]">
             <div class="flex flex-col items-center justify-center w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
               <img class="w-8 h-8 my-3" src="imgs/Local bar Rosa.svg">
-              <span class="font-size[16px] my-3 text-[#DB2763]">Date</span>
+              <span class="text-[16px] my-3 text-[#DB2763]">Date</span>
             </div>
           </div>
 
           <div class="w-[45%] h-[45%] my-1 rounded-2xl bg-[#272032]">
             <div class="flex flex-col items-center justify-center w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
               <img class="w-8 h-8 my-3" src="imgs/Local bar Roxa.svg">
-              <span class="font-size[16px] my-3 text-[#574AE2]">Saidera</span>
+              <span class="text-[16px] my-3 text-[#574AE2]">Saidera</span>
             </div>
           </div>
 
           <div class="w-[45%] h-[45%] my-1 rounded-2xl bg-[#272032]">
             <div class="flex flex-col items-center justify-center w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
               <img class="w-8 h-8 my-3" src="imgs/Local bar Verde.svg">
-              <span class="text-[16px] my-3 text-[#80FF91]">dsfdçkf</span>
+              <span class="text-[16px] my-3 text-[#80FF91]">Galera</span>
             </div>
           </div>
 
@@ -836,7 +837,7 @@
             <div
               class="flex flex-col flex-wrap items-center justify-center w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
               <img class="w-8 h-8 my-3" src="imgs/Local bar Amarela.svg">
-              <span class="text-[16px] my-3 text-[#FFD83E]">não sei D:</span>
+              <span class="text-[16px] my-3 text-[#FFD83E]">Cultural</span>
             </div>
           </div>
         </div>
@@ -852,14 +853,14 @@
           <!-- Mesmas proporções do segundo-->
           <div class="w-[90%] h-[20%] my-1 rounded-2xl bg-[#272032]">
             <div class="flex flex-row items-center justify-start w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
-              <span class="font-size[16px] ml-3 my-3 text-[#fff] font-semibold">Quinta, 5 de Junho de
+              <span class="text-[16px] ml-3 my-3 text-[#fff] font-semibold">Quinta, 5 de Junho de
                 2025</span>
             </div>
           </div>
 
           <div class="w-[90%] h-[20%] my-1 rounded-2xl bg-[#272032]">
             <div class="flex flex-row items-center justify-start w-[94%] h-[100%] rounded-2xl mx-1 bg-[#272032]">
-              <span class="font-size[16px] ml-3 my-3 text-[#fff] font-semibold">Sexta, 6 de Junho de 2025</span>
+              <span class="text-[16px] ml-3 my-3 text-[#fff] font-semibold">Sexta, 6 de Junho de 2025</span>
             </div>
           </div>
 
