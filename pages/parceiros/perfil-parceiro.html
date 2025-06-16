@@ -28,66 +28,68 @@
         <h1 class="text-2xl font-semibold">Minha conta</h1>
         <p class="font-extralight text-sm">Gerencie as suas informações</p>
 
-        <div class="flex mt-4 mb-4 rounded-full">
-            <img class="rounded-full object-cover w-45 h-45" src="https://avatars.githubusercontent.com/u/100811728?v=4" alt="fotoDoParceiro">
+        <div class="flex mt-4 mb-4 rounded-full bg-white">
+            <img class="rounded-full object-cover w-45 h-45" src="" alt="fotoDoParceiro">
         </div>
 
         <div class="flex flex-col md:flex-row md:w-200 w-100 gap-8 md:gap-10 mb-4">
             <div class="w-full flex flex-col gap-6">
-                <!-- INPUTS INFORMAÇÕES ESSENCIAIS -->
+                <!-- LABELS INFORMAÇÕES ESSENCIAIS -->
                 <h2 class="font-medium">Informações Essenciais</h2>
                 <div class="flex border-b border-white gap-2">
                     <i class="fa-solid fa-pen-to-square ml-2"></i>
-                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
-                        placeholder="Adicione o Nome Fantasia da sua Empresa">
+                    <label class="w-full outline-none font-thin text-sm" name="" id="">Concertair</label>
                 </div>
                 <div class="flex border-b border-white gap-2">
                     <i class="fa-solid fa-pen-to-square ml-2"></i>
-                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
-                        placeholder="Razão Social">
+                    <label class="w-full outline-none font-thin text-sm" name="" id="">Concertair Soluções Tecnológicas Ltda</label>
                 </div>
                 <div class="flex border-b border-white gap-2">
                     <i class="fa-regular fa-user ml-2"></i>
-                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="CNPJ">
+                    <label class="w-full outline-none font-thin text-sm" name="" id="">72.445.271/0001-90</label>
                 </div>
                  <div class="flex border-b border-white gap-2">
                     <i class="fa-regular fa-user ml-2"></i>
-                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="Selecione uma categoria de estabelecimento">
+                    <label class="w-full outline-none font-thin text-sm" name="" id="">Desenvolvimento de software sob encomenda                    </label>
                 </div>
-                 <div class="flex border-b border-white gap-2">
+                 <div class="flex border-b border-white gap-2 items-center">
                     <i class="fa-regular fa-user ml-2"></i>
-                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="Adicione um endereço fixo para o estabelecimento">
+                    <label class="w-full outline-none font-thin text-sm" name="" id="">
+                        Rua das Inovações, 2040
+                        Bairro Tecnópolis
+                        Cidade: Jaú
+                        Estado: SP
+                        CEP: 51434-215</label>
                 </div>
-                 <!-- FIM INPUTS INFORMAÇÕES ESSENCIAIS -->
+                 <!-- FIM LABELS INFORMAÇÕES ESSENCIAIS -->
             </div>
 
-            <!-- INPUTS PARA CONTATO -->
+            <!-- LABELS PARA CONTATO -->
             <div class="w-full flex flex-col gap-6">
                 <h2 class="font-medium">Para contato</h2>
                 <div class="flex border-b border-white gap-2">
                     <i class="fa-regular fa-envelope ml-2"></i>
-                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="Email">
+                    <label class="w-full outline-none font-thin text-sm" name="" id="">altair.jr2006@gmail.com</label>
                 </div>
                 <div class="flex border-b border-white gap-2">
                     <i class="fa-solid fa-mobile-screen ml-2"></i>
-                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
-                        placeholder="Telefone Celular">
+                    <label class="w-full outline-none font-thin text-sm" name="" id="">14 98833-2166</label>
                 </div>
                 <div class="flex border-b border-white gap-2">
                     <i class="fa-brands fa-instagram ml-2"></i>
-                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
-                        placeholder="Instagram">
+                    <label class="w-full outline-none font-thin text-sm" name="" id="">@Contertair.tecnologias</label>
                 </div>
                 <div class="flex border-b border-white gap-2">
                     <i class="fa-brands fa-tiktok ml-2"></i>
-                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="TikTok">
+                    <label class="w-full outline-none font-thin text-sm" name="" id="">@Contertair.tec</label>
                 </div> <!-- INPUTS PARA CONTATO -->
 
             </div>
         </div>
         <div class="flex items-center justify-center w-40 border border-white rounded-full p-2 gap-1">
-            <i class="fa-solid fa-pencil"></i>
-            <button class="text-sm font-thin">Editar informações</button>
+            <a href="editar-perfil-parceiro.html">
+                <i class="fa-solid fa-pencil"></i>
+            <button class="text-sm font-thin">Editar informações</a></button>
         </div>
         <div class="flex gap-4 mb-8">
             <div class="flex items-center gap-2 border-b border-[#FFD83E]">
@@ -95,7 +97,6 @@
                 <button onclick="" class="font-thin text-[#FFD83E] text-sm cursor-pointer"><a href="../../index.html"> Encerrar sessão </a></button>
             </div>
             <div class="flex items-center gap-2 border-b border-[#DB2763]">
-                <i class="fa-solid fa-arrow-left"></i>
                 <button onclick="" class="font-thin text-[#DB2763] text-sm cursor-pointer">Excluir conta</button>
                 <i class="fa-regular fa-trash-can"></i>
             </div>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Parceiros</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/0abe41f682.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    /*Esse CSS é para tirar o icone padrão do input date(limitação, não funciona no FireFox)*/
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    input[type="date"] {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+<body class="bg-[#1A1423] text-white">
+    <!-- INÍCIO CONTAINER -->
+    <div class="flex flex-col w-full items-center mt-8 gap-4">
+
+        <h1 class="text-2xl font-semibold">Minha conta</h1>
+        <p class="font-extralight text-sm">Gerencie as suas informações</p>
+
+        <div class="flex mt-4 mb-4 rounded-full">
+            <img class="rounded-full object-cover w-45 h-45" src="https://avatars.githubusercontent.com/u/100811728?v=4" alt="fotoDoParceiro">
+        </div>
+
+        <div class="flex flex-col md:flex-row md:w-200 w-100 gap-8 md:gap-10 mb-4">
+            <div class="w-full flex flex-col gap-6">
+                <!-- INPUTS INFORMAÇÕES ESSENCIAIS -->
+                <h2 class="font-medium">Informações Essenciais</h2>
+                <div class="flex border-b border-white gap-2">
+                    <i class="fa-solid fa-pen-to-square ml-2"></i>
+                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
+                        placeholder="Adicione o Nome Fantasia da sua Empresa">
+                </div>
+                <div class="flex border-b border-white gap-2">
+                    <i class="fa-solid fa-pen-to-square ml-2"></i>
+                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
+                        placeholder="Razão Social">
+                </div>
+                <div class="flex border-b border-white gap-2">
+                    <i class="fa-regular fa-user ml-2"></i>
+                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="CNPJ">
+                </div>
+                 <div class="flex border-b border-white gap-2">
+                    <i class="fa-regular fa-user ml-2"></i>
+                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="Selecione uma categoria de estabelecimento">
+                </div>
+                 <div class="flex border-b border-white gap-2">
+                    <i class="fa-regular fa-user ml-2"></i>
+                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="Adicione um endereço fixo para o estabelecimento">
+                </div>
+                 <!-- FIM INPUTS INFORMAÇÕES ESSENCIAIS -->
+            </div>
+
+            <!-- INPUTS PARA CONTATO -->
+            <div class="w-full flex flex-col gap-6">
+                <h2 class="font-medium">Para contato</h2>
+                <div class="flex border-b border-white gap-2">
+                    <i class="fa-regular fa-envelope ml-2"></i>
+                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="Email">
+                </div>
+                <div class="flex border-b border-white gap-2">
+                    <i class="fa-solid fa-mobile-screen ml-2"></i>
+                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
+                        placeholder="Telefone Celular">
+                </div>
+                <div class="flex border-b border-white gap-2">
+                    <i class="fa-brands fa-instagram ml-2"></i>
+                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id=""
+                        placeholder="Instagram">
+                </div>
+                <div class="flex border-b border-white gap-2">
+                    <i class="fa-brands fa-tiktok ml-2"></i>
+                    <input class="w-full outline-none font-thin text-sm" type="text" name="" id="" placeholder="TikTok">
+                </div> <!-- INPUTS PARA CONTATO -->
+
+            </div>
+        </div>
+        <div class="flex items-center justify-center w-40 border border-white rounded-full p-2 gap-1">
+            <i class="fa-solid fa-pencil"></i>
+            <button class="text-sm font-thin">Editar informações</button>
+        </div>
+        <div class="flex gap-4 mb-8">
+            <div class="flex items-center gap-2 border-b border-[#FFD83E]">
+                <i class="fa-solid fa-arrow-left"></i>
+                <button onclick="" class="font-thin text-[#FFD83E] text-sm cursor-pointer"><a href="../../index.html"> Encerrar sessão </a></button>
+            </div>
+            <div class="flex items-center gap-2 border-b border-[#DB2763]">
+                <i class="fa-solid fa-arrow-left"></i>
+                <button onclick="" class="font-thin text-[#DB2763] text-sm cursor-pointer">Excluir conta</button>
+                <i class="fa-regular fa-trash-can"></i>
+            </div>
+        </div>
+
+    </div><!-- FIM CONTAINER -->
+</body>
+
+</html>
