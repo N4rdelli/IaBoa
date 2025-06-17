@@ -146,10 +146,10 @@ class NavbarIaBoa extends HTMLElement {
     const cadastroBtn = this.querySelector('#cadastro-btn');
     const mobileCadastroBtn = this.querySelector('#mobile-cadastro-btn');
     cadastroBtn?.addEventListener('click', () => {
-      window.location.href = '../pages/autenticacao/cadastrar.html';
+      window.location.href = '../pages/autenticacao/cadastrar-usuario.html';
     });
     mobileCadastroBtn?.addEventListener('click', () => {
-      window.location.href = '../pages/autenticacao/cadastrar.html';
+      window.location.href = '../pages/autenticacao/cadastrar-usuario.html';
     });
 
     // LOGOUT

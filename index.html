@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
 
-    <link rel="shortcut icon" href="./imgs/logoTemporaria.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./imgs/logoTemporaria.svg" type="image/x-icon" />
     <title>I a Boa?</title>
   </head>
 
@@ -44,7 +44,7 @@
       <div id="carousel-container" class="relative w-full overflow-hidden">
         <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
           <!-- Slide 1 (Rosa) -->
-          <div class="carousel-slide w-full flex-shrink-0 h-64 md:h-80 bg-[#D9346F]"> </div>
+          <div class="carousel-slide w-full flex-shrink-0 h-64 md:h-80 bg-[#D9346F]"></div>
           <!-- Slide 2 (Roxo) -->
           <div class="carousel-slide w-full flex-shrink-0 h-64 md:h-80 bg-[#5A49E3]"></div>
           <!-- Slide 3 (Verde) -->
@@ -81,24 +81,20 @@
       <!-- Container dos Cards, utilizando Grid para o layout responsivo, alternando a quantidade de colunas -->
       <div id="card-container" class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
         <!-- Web Component 'card-role-destaque'. Nele nós estamos passando 4 atributos diferentes (url da iamgem, título do rolê, descrição e página aonde ele leva).  -->
+        <card-role-destaque img-src="./imgs/bacobar.webp" titulo="Baco Bar" descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)" href="/pages/roles/detalhes-role.html">
+        </card-role-destaque>
+
         <card-role-destaque
-          img-src="https://placehold.co/400x250/FFC700/FFC700"
-          titulo="Baco Bar"
-          descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)"
+          img-src="./imgs/roleDestaque-expo.jpeg"
+          titulo="Expo Jahu 2025"
+          descricao="A Expo Jaú tá chegando com tudo de 14 a 18 de agosto e você não pode ficar de fora! Se liga: vai ter rodeio irado, shows com artistas que você ama, e ainda rola uma feira agropecuária massa pra curtir. É o rolê perfeito pra você e seus amigos, com muita música, adrenalina e boas energias."
           href="/pages/roles/detalhes-role.html">
         </card-role-destaque>
 
         <card-role-destaque
-          img-src="https://placehold.co/400x250/5A49E3/5A49E3"
-          titulo="Baco Bar"
-          descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)"
-          href="/pages/roles/detalhes-role.html">
-        </card-role-destaque>
-
-        <card-role-destaque
-          img-src="https://placehold.co/400x250/70FF93/70FF93"
-          titulo="Baco Bar"
-          descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)"
+          img-src="./imgs/barban.webp"
+          titulo="Barban Pub"
+          descricao="Se você quer música boa que vai do rock ao funk, passando por outros estilos que agitam a pista, e um ambiente que te convida a relaxar e se divertir. É o lugar ideal para um happy hour depois do trabalho, um encontro descontraído no final de semana ou até mesmo para comemorar algo especial. A diversão é garantida!"
           href="/pages/roles/detalhes-role.html">
         </card-role-destaque>
       </div>
@@ -121,17 +117,17 @@
             <!-- Uso do Web Component 'card-proximo-role' -->
             <card-proximo-role
               img-src="https://placehold.co/300x300/D9D9D9/D9D9D9"
-              titulo="After do Baco"
+              titulo="Título do Rolê"
               horario="20:00 - 05:00"
-              lugar="Baco Bar Gastronomia"
+              lugar="Nome do Estabelecimento"
               href="/role/after-do-baco"
               categorias='[
                             {"icon":"liquor", "text":"Categoria", "color":"#D9346F"},
                             {"icon":"music_note", "text":"Categoria", "color":"#5A49E3"}
                         ]'>
             </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="Título do Rolê" horario="20:00 - 05:00" lugar="Nome do Estabelecimento" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"celebration", "text":"Categoria 1", "color":"#FFC700"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="Título do Rolê" horario="20:00 - 05:00" lugar="Nome do Estabelecimento" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Categoria 2", "color":"#70FF93"}]'> </card-proximo-role>
           </div>
         </div>
 
@@ -139,10 +135,10 @@
         <div class="date-group flex flex-col gap-6">
           <h4 class="text-sm font-semibold text-white">Sábado, 7 de Junho de 2025.</h4>
           <div class="cards-container grid grid-cols-1 md:grid-cols-2 gap-8">
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="Título do Rolê" horario="20:00 - 05:00" lugar="Nome do Estabelecimento" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="Título do Rolê" horario="20:00 - 05:00" lugar="Nome do Estabelecimento" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="Título do Rolê" horario="20:00 - 05:00" lugar="Nome do Estabelecimento" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="Título do Rolê" horario="20:00 - 05:00" lugar="Nome do Estabelecimento" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
           </div>
         </div>
 
@@ -150,8 +146,8 @@
         <div class="date-group flex flex-col gap-6">
           <h4 class="text-sm font-semibold text-white">Domingo, 8 de Junho de 2025.</h4>
           <div class="cards-container grid grid-cols-1 md:grid-cols-2 gap-8">
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="Título do Rolê" horario="20:00 - 05:00" lugar="Nome do Estabelecimento" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="Título do Rolê" horario="20:00 - 05:00" lugar="Nome do Estabelecimento" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
           </div>
         </div>
       </div>
