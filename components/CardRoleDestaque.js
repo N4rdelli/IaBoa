@@ -8,6 +8,7 @@ template.innerHTML = `
     /* Nós também podemos utilizar clases CSS aqui, e elas ficaram encapsuladas aqui dentro) */
     #card-container{
       background: #272032;
+      transition: transform 0.3s ease;
     }
 
     :host {
@@ -25,7 +26,7 @@ template.innerHTML = `
       </div>
       
       <!-- Container de Informações (Título e Descrição) -->
-      <div id="info-container" class="flex flex-col px-4 py-6 md:px-6 md:py-8 gap-y-5 flex-grow">
+      <div id="info-container" class="flex flex-col px-6 py-8 gap-y-4 flex-grow">
         <h3 id="card-title" class="font-semibold text-2xl text-white"></h3>
         <p id="card-description" class="font-light text-sm leading-loose text-white"></p>
       </div>
