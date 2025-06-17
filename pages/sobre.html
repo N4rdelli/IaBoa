@@ -8,43 +8,137 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>Sobre</title>
+    <title>Sobre o Projeto</title>
 </head>
 <body>
-    <!-- Implementando a navbar componentizada -->
-    <nav class="bg-zinc-900 px-8 py-4">
-        <div class="flex justify-between items-center w-full">
-            <!-- Logo -->
-            <a href="" class="text-white text-lg font bold"></a>
+    <navbar-iaboa></navbar-iaboa>
 
-            <!-- Links de navegação -->
-            <div class="hidden md:flex space-x-4 mx-4 flex-grow">
-                <a href="/index.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Página Inicial</a>
-                <a href="/pages/sobre.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Sobre o Projeto</a>
-                <a href="/pages/desenvolvedores.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Desenvolvedores</a>
+    <main>
+        <!-- Seção 1: Hero - A grande ideia -->
+        <section class="text-center py-20 px-4">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+                    Chega de perder rolê por <span class="text-[var(--cor-rosa)]">falta de informação.</span>
+                </h1>
+                <p class="mt-6 text-lg text-gray-300">
+                    O "I a Boa?" nasceu de uma necessidade nossa: centralizar todos os eventos e lugares legais de Jaú em um só lugar. Simples, rápido e na sua mão.
+                </p>
             </div>
+        </section>
 
-            <!-- Botões de login/cadastro -->
-            <div class="flex gap-3">
-                <div class="hidden md:block hover:text-zinc-900">
-                    <a href="#"
-                        class="text-white hover:bg-white-900 border border-white transition-colors duration-300 px-4 py-2 rounded">Cadastre-se</a>
+        <!-- Seção 2: Nosso Compromisso (baseado na Proposta de Valor) -->
+        <section class="py-16 lg:py-24 px-4 sm:px-8">
+            <div class="max-w-screen-xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-semibold">Nosso Compromisso com o Rolê</h2>
+                    <p class="mt-4 text-gray-400">Isso é o que a gente garante pra você e pra cidade:</p>
                 </div>
-                <div class="hidden md:block">
-                    <a href="#"
-                        class="text-white bg-[#DB2763] hover:bg-[#B01D4F] px-4 py-2 rounded transition-colors duration-200">Login</a>
+                
+                <!-- Grid de cards com os valores do projeto -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Card 1: Centralização -->
+                    <div class="bg-[var(--cor-card-fundo)] p-8 rounded-lg text-center">
+                        <span class="material-symbols-outlined text-4xl text-[">
+
+        <!-- Seção 1: Header - O que é o "I a Boa?" -->
+        <section class="text-center mb-20">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">A gente acredita no rolê perfeito.</h1>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                Chega de passar o finde sem saber o que fazer! O "I a Boa?" nasceu da nossa própria agonia: caçar informações de eventos em mil lugares diferentes. Nossa missão é simples: criar um só lugar pra você encontrar todos os rolês da cidade.
+            </p>
+        </section>
+
+        <!-- Seção 2: Nosso Compromisso - A Proposta de Valor -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-10">Nosso Compromisso com Você</h2>
+            <!-- Grid com 3 colunas para os compromissos -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Centralização -->
+                <div class="bg-[#272032] p-8 rounded-lg text-center flex flex-col items-center">
+                    <span class="material-symbols-outlined text-[#D9346F] text-5xl mb-4">hub</span>
+                    <h3 class="text-2xl font-semibold mb-2">Tudo em um só lugar</h3>
+                    <p class="text-gray-400">
+                        Festas, bares, shows, eventos da prefeitura... Se tá rolando em Jaú, tá aqui. Sem estresse, sem complicação.
+                    </p>
                 </div>
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-white">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
+
+                <!-- Card 2: Valorização Local -->
+                <div class="bg-[#272032] p-8 rounded-lg text-center flex flex-col items-center">
+                    <span class="material-symbols-outlined text-[#5A49E3] text-5xl mb-4">local_activity</span>
+                    <h3 class="text-2xl font-semibold mb-2">Fortalecendo a Cena</h3>
+                    <p class="text-gray-400">
+                        A gente quer dar palco pra quem faz a cidade acontecer: artistas, organizadores e estabelecimentos locais. Valorizar o que é nosso é a boa!
+                    </p>
+                </div>
+                
+                <!-- Card 3: Acesso Fácil -->
+                <div class="bg-[#272032] p-8 rounded-lg text-center flex flex-col items-center">
+                    <span class="material-symbols-outlined text-[#70FF93] text-5xl mb-4">devices</span>
+                    <h3 class="text-2xl font-semibold mb-2">Simples e Acessível</h3>
+                    <p class="text-gray-400">
+                        Uma plataforma intuitiva, rápida e que funciona em qualquer tela. A informação que você precisa, na palma da sua mão.
+                    </p>
                 </div>
             </div>
-        </div>
-    </nav>
+        </section>
 
-    <br>
-    <h1>Sobre o Projeto</h1>
+        <!-- Seção 3: O Time - Quem Faz Acontecer -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-10">Quem Faz a Boa Acontecer</h2>
+            <!-- Informações extraídas da página 3 da documentação -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
+                
+                <!-- Membro 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 bg-gray-700 rounded-full mb-3"></div> <!-- Placeholder para foto -->
+                    <h4 class="font-semibold">Altair Preto de Godoi Junior</h4>
+                </div>
+                <!-- Membro 2 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 bg-gray-700 rounded-full mb-3"></div>
+                    <h4 class="font-semibold">Anelize Nardelli</h4>
+                </div>
+                <!-- Membro 3 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 bg-gray-700 rounded-full mb-3"></div>
+                    <h4 class="font-semibold">Diego Lopes da Silva</h4>
+                </div>
+                <!-- Membro 4 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 bg-gray-700 rounded-full mb-3"></div>
+                    <h4 class="font-semibold">João Pedro Pascuci Russi</h4>
+                </div>
+                <!-- Membro 5 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 bg-gray-700 rounded-full mb-3"></div>
+                    <h4 class="font-semibold">Luis Eduardo Abdo dos Santos</h4>
+                </div>
+            </div>
+             <p class="text-center text-gray-400 mt-6">Um projeto desenvolvido com muito café e dedicação por alunos do curso de DSM da Fatec Jahu.</p>
+        </section>
+
+        <!-- Seção 4: Tecnologias - Nossa Stack -->
+        <section>
+            <h2 class="text-3xl font-bold text-center mb-10">Como a gente constrói isso?</h2>
+            <p class="text-center text-gray-300 max-w-2xl mx-auto mb-8">
+                Usamos as ferramentas mais modernas do mercado pra garantir que sua experiência seja a melhor possível. Pega a visão da nossa stack:
+            </p>
+            <!-- Informações extraídas da página 8 da documentação -->
+            <div class="flex flex-wrap justify-center items-center gap-4 text-gray-300">
+                <span class="bg-[#272032] px-4 py-2 rounded-full">HTML5</span>
+                <span class="bg-[#272032] px-4 py-2 rounded-full">CSS3</span>
+                <span class="bg-[#272032] px-4 py-2 rounded-full">JavaScript</span>
+                <span class="bg-[#272032] px-4 py-2 rounded-full">Tailwind CSS</span>
+                <span class="bg-[#272032] px-4 py-2 rounded-full">Web Components</span>
+                <span class="bg-[#272032] px-4 py-2 rounded-full">Figma</span>
+                <span class="bg-[#272032] px-4 py-2 rounded-full">Git & GitHub</span>
+                <span class="bg-[#272032] px-4 py-2 rounded-full">Scrum</span>
+            </div>
+        </section>
+        
+    </div>
 
     <!-- Script main.js -->
     <script src="/js/main.js"></script>
