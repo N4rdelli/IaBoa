@@ -73,7 +73,7 @@ class NavbarIaBoa extends HTMLElement {
               </div>
             `
               : `
-              <button class="bg-transparent border border-white px-4 py-2 lg:px-8 rounded-md hover:bg-white hover:text-black transition-colors duration-200 cursor-pointer">Cadastre-se</button>
+              <button id="cadastro-btn" class="bg-transparent border border-white px-4 py-2 lg:px-8 rounded-md hover:bg-white hover:text-black transition-colors duration-200 cursor-pointer">Cadastre-se</button>
               <button id="login-btn" class="bg-[#DB2763] px-4 py-2 lg:px-8 rounded-md hover:bg-[#B01D4F] transition-colors duration-200 cursor-pointer">Entrar</button>
             `
           }
@@ -103,7 +103,7 @@ class NavbarIaBoa extends HTMLElement {
                 <button id="mobile-logout-btn" class="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition">Sair</button>
               `
                 : `
-                <button class="bg-transparent border border-white px-4 py-2 rounded-md hover:bg-white hover:text-black transition">Cadastre-se</button>
+                <button id="mobile-cadastro-btn" class="bg-transparent border border-white px-4 py-2 rounded-md hover:bg-white hover:text-black transition">Cadastre-se</button>
                 <button id="mobile-login-btn" class="bg-[#DB2763] px-4 py-2 rounded-md hover:bg-[#B01D4F] transition">Entrar</button>
               `
             }
@@ -140,6 +140,16 @@ class NavbarIaBoa extends HTMLElement {
     });
     mobileLoginBtn?.addEventListener('click', () => {
       window.location.href = '../pages/autenticacao/entrar.html';
+    });
+
+    // CADASTRO
+    const cadastroBtn = this.querySelector('#cadastro-btn');
+    const mobileCadastroBtn = this.querySelector('#mobile-cadastro-btn');
+    cadastroBtn?.addEventListener('click', () => {
+      window.location.href = '../pages/autenticacao/cadastrar-usuario.html';
+    });
+    mobileCadastroBtn?.addEventListener('click', () => {
+      window.location.href = '../pages/autenticacao/cadastrar-usuario.html';
     });
 
     // LOGOUT

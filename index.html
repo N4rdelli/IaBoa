@@ -16,34 +16,7 @@
   </head>
 
   <body>
-    <nav class="bg-zinc-900 px-8 py-4">
-      <div class="flex justify-between items-center w-full">
-        <!-- Logo -->
-        <a href="" class="text-white text-lg font bold"></a>
-
-        <!-- Links de navegação -->
-        <div class="hidden md:flex space-x-4 mx-4 flex-grow">
-          <a href="/index.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Página Inicial</a>
-          <a href="/pages/sobre.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Sobre o Projeto</a>
-          <a href="/pages/desenvolvedores.html" class="text-white hover:bg-[#DB2763] px-3 py-2 rounded">Desenvolvedores</a>
-        </div>
-
-        <!-- Botões de login/cadastro -->
-        <div class="flex gap-3">
-          <div class="hidden md:block hover:text-zinc-900">
-            <a href="/pages/autenticacao/cadastrar-usuario.html" class="text-white hover:bg-white-900 border border-white transition-colors duration-300 px-4 py-2 rounded">Cadastre-se</a>
-          </div>
-          <div class="hidden md:block">
-            <a href="/pages/autenticacao/entrar.html" class="text-white bg-[#DB2763] hover:bg-[#B01D4F] px-4 py-2 rounded transition-colors duration-200">Login</a>
-          </div>
-          <div class="md:hidden">
-            <button id="menu-toggle" class="text-white">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <navbar-iaboa></navbar-iaboa>
 
     <!-- Master Head: em display flex column para ajudar no processo de centralização do texto em relação a div. Testando manualmente os tamanhos "96" foi o mais próximo do resultado do figma e a cor preta é placeholder até eu pegar a imagem utilizada no figma-->
     <div class="w-full flex flex-col h-96 justify-center bg-[#1A1423] bg-[url('imgs/Fundo-iaboa.png')] bg-repeat md:bg-[length:100%_auto] bg-[position:0px_-500px]">
@@ -64,8 +37,35 @@
       </div>
     </div>
 
-    <!-- Carrossel-->
-    <div class="w-full md:flex h-64 bg-[#DB2763] hidden"></div>
+    <section class="w-full relative" aria-labelledby="carousel-heading">
+      <h2 id="carousel-heading" class="sr-only">Carrossel de Destaques</h2>
+      <div id="carousel-container" class="relative w-full overflow-hidden">
+        <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
+          <!-- Slide 1 (Rosa) -->
+          <div class="carousel-slide w-full flex-shrink-0 h-64 md:h-80 bg-[#D9346F]"> </div>
+          <!-- Slide 2 (Roxo) -->
+          <div class="carousel-slide w-full flex-shrink-0 h-64 md:h-80 bg-[#5A49E3]"></div>
+          <!-- Slide 3 (Verde) -->
+          <div class="carousel-slide w-full flex-shrink-0 h-64 md:h-80 bg-[#70FF93]"></div>
+        </div>
+
+        <!-- Botão de Navegação: Anterior -->
+        <button id="carousel-prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-none bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-opacity z-10">
+          <!-- Ícone de seta (SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <!-- Botão de Navegação: Próximo -->
+        <button id="carousel-next" class="absolute top-1/2 right-4 -translate-y-1/2 bg-none bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-opacity z-10">
+          <!-- Ícone de seta (SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </section>
 
     <!-- Section 'Rolês em Destaque' / Escolha do I a Boa? -->
     <!-- A section é dividida em uma header para o título e subtítulo e um container para os cards -->
@@ -79,13 +79,25 @@
       <!-- Container dos Cards, utilizando Grid para o layout responsivo, alternando a quantidade de colunas -->
       <div id="card-container" class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
         <!-- Web Component 'card-role-destaque'. Nele nós estamos passando 4 atributos diferentes (url da iamgem, título do rolê, descrição e página aonde ele leva).  -->
-        <card-role-destaque img-src="https://placehold.co/400x250/FFC700/FFC700" titulo="Baco Bar" descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)" href="/role/baco-bar">
+        <card-role-destaque
+          img-src="https://placehold.co/400x250/FFC700/FFC700"
+          titulo="Baco Bar"
+          descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)"
+          href="/pages/roles/detalhes-role.html">
         </card-role-destaque>
 
-        <card-role-destaque img-src="https://placehold.co/400x250/5A49E3/5A49E3" titulo="Baco Bar" descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)" href="/role/baco-bar-2">
+        <card-role-destaque
+          img-src="https://placehold.co/400x250/5A49E3/5A49E3"
+          titulo="Baco Bar"
+          descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)"
+          href="/pages/roles/detalhes-role.html">
         </card-role-destaque>
 
-        <card-role-destaque img-src="https://placehold.co/400x250/70FF93/70FF93" titulo="Baco Bar" descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)" href="/role/baco-bar-3">
+        <card-role-destaque
+          img-src="https://placehold.co/400x250/70FF93/70FF93"
+          titulo="Baco Bar"
+          descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)"
+          href="/pages/roles/detalhes-role.html">
         </card-role-destaque>
       </div>
     </section>
@@ -116,8 +128,8 @@
                             {"icon":"music_note", "text":"Categoria", "color":"#5A49E3"}
                         ]'>
             </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-2" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-3" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
           </div>
         </div>
 
@@ -125,10 +137,10 @@
         <div class="date-group flex flex-col gap-6">
           <h4 class="text-sm font-semibold text-white">Sábado, 7 de Junho de 2025.</h4>
           <div class="cards-container grid grid-cols-1 md:grid-cols-2 gap-8">
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-3" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-3" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-2" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-3" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
           </div>
         </div>
 
@@ -136,8 +148,8 @@
         <div class="date-group flex flex-col gap-6">
           <h4 class="text-sm font-semibold text-white">Domingo, 8 de Junho de 2025.</h4>
           <div class="cards-container grid grid-cols-1 md:grid-cols-2 gap-8">
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-2" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
-            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-3" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/pages/roles/detalhes-role.html" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
           </div>
         </div>
       </div>

@@ -40,12 +40,17 @@ template.innerHTML = `
 
     #card-container {
       background: #272032;
-      transition: transform 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     #card-container:hover .cta-button{
       scale: 1.05;
       transform: translateY(-5px);
+    }
+
+    #card-container:hover{
+      filter: brightness(1.2);
+      cursor: pointer;
     }
   </style>
 

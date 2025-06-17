@@ -15,6 +15,8 @@ card-role-destaque.highlighted {
     transform: translateY(-12px) scale(1.03);
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.2);
     z-index: 10;
+    filter: brightness(1.2);
+    transition: all 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 card-role-destaque {
@@ -27,4 +29,6 @@ card-role-destaque:hover {
     transform: translateY(-12px) scale(1.03);
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.2);
     z-index: 10;
+    filter: brightness(1.2);
+    transition: all 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
