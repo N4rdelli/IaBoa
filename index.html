@@ -212,20 +212,23 @@
     </section>
 
     <!-- Newsletter -->
-    <div class="w-full h-auto bg-[#1A1423] bg-[url(imgs/Fundo-iaboa.png)] bg-repeat bg-[length:100%_auto] bg-[position:0px_-500px] text-white">
-      <h3 class="text-3xl text-center font-semibold pt-12 pb-4">Não tá afim de perder nenhuma novidade?</h3>
-      <h5 class="text-xl text-center pb-6">Se inscreva na nossa <b class="font-semibold">Newsletter</b>. É a garantia de que você vai estar por dentro de tudo!</h5>
-      <div class="flex max-w-md md:max-w-2xl justify-self-center items-center w-full sm:w-296 h-28 bg-[#272032]">
-        <!-- Super input-->
-        <div class="flex flex-grow mx-8 w-230 h-12 bg-white">
-          <input type="text" placeholder="Seu melhor email aqui!" class="w-full ml-4 text-sm text-black outline-none" />
-        </div>
-        <!-- Super botão-->
-        <div class="flex flex-shrink-0 mr-8 w-42 h-12 bg-[#DB2763] justify-center items-center">
-          <a class="text-center font-semibold text-xl" href="#">Inscrever-se</a>
+    <section class="w-full h-auto bg-[#1A1423] bg-[url(imgs/Fundo-iaboa.png)] bg-repeat bg-[length:100%_auto] bg-[position:0px_-500px] text-white">
+      <div class="flex flex-col py-12 px-16 sm:px-24 lg:px-32 items-center gap-y-12 w-full">
+        <header class="text-center flex flex-col items-center gap-6">
+          <h2 class="text-3xl font-semibold">Não tá afim de perder nenhuma novidade?</h2>
+          <p class="text-sm font-light text-gray-300 w-full">Se inscreva na nossa <b class="font-semibold">Newsletter</b>. É a garantia de que você vai estar por dentro de tudo!</p>
+        </header>
+        <div class="bg-[#272032] flex flex-col lg:flex-row p-8 justify-center items-center w-full gap-8">
+          <!-- Super input-->
+          <input type="text" placeholder="Seu melhor email aqui!" class="w-full text-sm text-black outline-none bg-white px-4 py-3" />
+          <!-- Super botão-->
+          <button class="w-auto lg:w-1/3 xl:w-1/5 flex items-center justify-center bg-[#DB2763] text-white px-6 py-3 hover:bg-[#B01D4F] transition-colors duration-200 gap-4">
+            <span class="material-symbols-outlined text-white">send</span>
+            <h5 class="text-center font-normal text-sm">Inscrever-se!</h5>
+          </button>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Script main.js -->
     <script type="module" src="./js/main.js"></script>
