@@ -1,11 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+body {
     font-family: Raleway, 'sans-serif';
+    letter-spacing: 0.05em;
     background: #1A1423;
 }
 
-.img{
+.img {
     background-image: url(/imgs/Section\ Hero.svg);
     object-fit: cover;
+}
+
+card-role-destaque.highlighted {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.2);
+    z-index: 10;
+}
+
+card-role-destaque {
+    display: block;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    position: relative;
+}
+
+card-role-destaque:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.2);
+    z-index: 10;
 }

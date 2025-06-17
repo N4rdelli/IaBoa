@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+
     <title>I a Boa?</title>
   </head>
 
@@ -68,514 +69,79 @@
 
     <!-- Section Rolês em Destaque / Escolha do I a Boa? -->
     <!-- A section é dividida em uma header para o título e subtítulo e um container para os cards -->
-    <section class="flex flex-col items-center w-full py-12 px-16 sm:px-24 lg:px-32 gap-12">
+    <section class="flex flex-col items-center w-full py-12 px-16 sm:px-24 lg:px-32 gap-y-12">
       <!-- Header da Seção -->
       <header class="text-center flex flex-col items-center gap-6">
         <h2 class="text-3xl font-semibold text-white">Escolha do I a Boa</h2>
-        <p class="text-sm font-light text-white w-full">As melhores recomendações de rolê da cidade! Ainda não sabe pra onde ir? Tenta uma das nossas indicações!</p>
+        <p class="text-sm font-light text-gray-300 w-full">As melhores recomendações de rolê da cidade! Ainda não sabe pra onde ir? Tenta uma das nossas indicações!</p>
       </header>
 
       <!-- Container dos Cards, utilizando Grid para o layout responsivo, alternando a quantidade de colunas -->
       <div id="card-container" class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-            <!-- Web Component 'card-role-destque'. Nele nós estamos passando 4 atributos diferentes (url da iamgem, título do rolê, descrição e página aonde ele leva).  -->
-            <card-role-destaque
-                img-src="https://placehold.co/400x250/FFC700/FFC700"
-                titulo="Baco Bar"
-                descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)"
-                href="/role/baco-bar">
-            </card-role-destaque>
-            
-            <card-role-destaque
-                img-src="https://placehold.co/400x250/5A49E3/5A49E3"
-                titulo="Baco Bar"
-                descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)"
-                href="/role/baco-bar-2">
-            </card-role-destaque>
+        <!-- Web Component 'card-role-destaque'. Nele nós estamos passando 4 atributos diferentes (url da iamgem, título do rolê, descrição e página aonde ele leva).  -->
+        <card-role-destaque img-src="https://placehold.co/400x250/FFC700/FFC700" titulo="Baco Bar" descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)" href="/role/baco-bar">
+        </card-role-destaque>
 
-            <card-role-destaque
-                img-src="https://placehold.co/400x250/70FF93/70FF93"
-                titulo="Baco Bar"
-                descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)"
-                href="/role/baco-bar-3">
-            </card-role-destaque>
-        </div>
+        <card-role-destaque img-src="https://placehold.co/400x250/5A49E3/5A49E3" titulo="Baco Bar" descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)" href="/role/baco-bar-2">
+        </card-role-destaque>
+
+        <card-role-destaque img-src="https://placehold.co/400x250/70FF93/70FF93" titulo="Baco Bar" descricao="Principal rolê da cidade. Reúna seus amigos num ambiente agradável pra tomar aquela gelada (e se tiver after, a diversão tá liberada até as 5h da manhã!)" href="/role/baco-bar-3">
+        </card-role-destaque>
+      </div>
     </section>
 
-    <!-- Próximos Rolês -->
-    <div class="w-full flex justify-center gap-8 h-auto bg-[#1A1423]" id="roles">
-      <!-- Container 1-->
-      <div class="container-sm mx-auto px-2 xl:px-4 bg-[#1A1423] text-white">
-        <p class="text-5xl text-center pt-3 xl:pt-6 font-semibold justify-center">Próximos Rolês</p>
-        <p class="text-center py-6">Veja a programação dos próximos dias na cidade de Jaú.</p>
-        <!-- Wrapper com texto 1 -->
-        <div class="flex flex-col flex-wrap justify-center mb-6">
-          <p class="text-2xl xl:mt-4 xl:pr-4 xl:mx-4 xl:mb-8 font-semibold text-white text-center xl:text-left">Sexta Feira, 16 de Maio de 2025.</p>
-          <!-- Wrapper dos containers 1 -->
-          <div class="flex flex-row flex-wrap gap-2 justify-center">
-            <!-- Molde 1-->
-            <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
-              <!-- Imagem 1-->
-              <div class="h-45 w-45 md:w-1/3 bg-white"></div>
-              <!-- Espaço com informações-->
-              <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-                <!-- Div organizadora-->
-                <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                  <!-- Texto titulo-->
-                  <h4 class="text-2xl text-white font-semibold">After do Baco</h4>
-                  <!-- Horário -->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso" />
-                    <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                  </div>
-                  <!-- Local-->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização" />
-                    <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                  </div>
-                  <!-- Categorias -->
-                  <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center">
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                    </div>
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                    </div>
-                  </div>
-                  <!--Ponteiro-->
-                  <!-- Monta a posição absoluta do ponteiro na direita-->
-                  <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                    <a href="/pages/roles/detalhes-role.html"
-                      ><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg" /> <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg" />
-                    </a>
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Molde 2-->
-            <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
-              <!-- Imagem 2-->
-              <div class="h-45 w-45 md:w-1/3 bg-white"></div>
-              <!-- Espaço com informações-->
-              <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-                <!-- Div organizadora-->
-                <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                  <!-- Texto titulo-->
-                  <h4 class="text-2xl text-white font-semibold">After do Baco</h4>
-                  <!-- Horário -->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso" />
-                    <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                  </div>
-                  <!-- Local-->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização" />
-                    <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                  </div>
-                  <!-- Categorias -->
-                  <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center">
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                    </div>
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                    </div>
-                  </div>
-                  <!--Ponteiro-->
-                  <!-- Monta a posição absoluta do ponteiro na direita-->
-                  <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                    <a href="/pages/roles/detalhes-role.html"
-                      ><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg" /> <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg" />
-                    </a>
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
+    <!-- Section Próximos Rolês -->
+    <section class="w-full py-12 px-16 sm:px-24 lg:px-32 flex flex-col gap-y-12">
+      <!-- Header da Seção -->
+      <header class="text-center flex flex-col items-center gap-6">
+        <h2 class="text-3xl font-semibold text-white">Próximos Rolês</h2>
+        <p class="text-sm font-light text-gray-300 w-full">Veja a programação dos próximos dias na cidade de Jaú.</p>
+      </header>
 
-            <!-- Molde 3-->
-            <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
-              <!-- Imagem 3-->
-              <div class="h-45 w-45 md:w-1/3 bg-white"></div>
-              <!-- Espaço com informações-->
-              <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-                <!-- Div organizadora-->
-                <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                  <!-- Texto titulo-->
-                  <h4 class="text-2xl text-white font-semibold">After do Baco</h4>
-                  <!-- Horário -->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso" />
-                    <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                  </div>
-                  <!-- Local-->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização" />
-                    <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                  </div>
-                  <!-- Categorias -->
-                  <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center">
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                    </div>
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                    </div>
-                  </div>
-                  <!--Ponteiro-->
-                  <!-- Monta a posição absoluta do ponteiro na direita-->
-                  <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                    <a href="/pages/roles/detalhes-role.html"
-                      ><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg" /> <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg" />
-                    </a>
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Os moldes "solitários" acabavam perdendo a proporção com o flex-grow que eu estabeleci, e por isso eu adicionei um invisivel de código igual que vai funcionar efetivamente só pra alinhar os solitários com os acima-->
-            <!-- Molde fantasma 1-->
-            <div class="md:my-8 h-0 md:h-45 md:w-100 md:w-135 md:max-w-[45%] xl:pr-4 xl:mx-4 flex-grow max-w-1/2 bg-[#272032] flex relative invisible pointer-events-none">
-              <!-- Imagem fantasma-->
-              <div class="h-45 w-45 md:w-1/3 bg-white"></div>
-              <!-- Espaço com informações-->
-              <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-                <!-- Div organizadora-->
-                <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                  <!-- Texto titulo-->
-                  <h4 class="text-2xl text-white font-semibold">After do Baco</h4>
-                  <!-- Horário -->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso" />
-                    <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                  </div>
-                  <!-- Local-->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização" />
-                    <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                  </div>
-                  <!-- Categorias -->
-                  <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center">
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                    </div>
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                    </div>
-                  </div>
-                  <!--Ponteiro-->
-                  <!-- Monta a posição absoluta do ponteiro na direita-->
-                  <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                    <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg" />
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg" />
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
+      <!-- Container para todos os grupos de datas -->
+      <div class="w-full flex flex-col gap-y-12">
+        <!-- Grupo de Data: Sexta-Feira -->
+        <div class="date-group flex flex-col gap-6">
+          <h4 class="text-sm font-semibold text-white">Sexta Feira, 6 de Maio de 2025.</h4>
+          <div class="cards-container grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Uso do Web Component 'card-proximo-role' -->
+            <card-proximo-role
+              img-src="https://placehold.co/300x300/D9D9D9/D9D9D9"
+              titulo="After do Baco"
+              horario="20:00 - 05:00"
+              lugar="Baco Bar Gastronomia"
+              href="/role/after-do-baco"
+              categorias='[
+                            {"icon":"liquor", "text":"Categoria", "color":"#D9346F"},
+                            {"icon":"music_note", "text":"Categoria", "color":"#5A49E3"}
+                        ]'>
+            </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-2" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-3" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
           </div>
         </div>
 
-        <!-- Wrapper com texto 2 -->
-        <div class="flex flex-col flex-wrap justify-center mb-6">
-          <p class="text-2xl xl:mt-4 xl:pr-4 xl:mx-4 xl:mb-8 font-semibold text-white text-center xl:text-left">Sábado, 17 de Maio de 2025.</p>
-          <!-- Wrapper dos containers 2 -->
-          <div class="flex flex-row flex-wrap gap-2 justify-center">
-            <!-- Molde 4-->
-            <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
-              <!-- Imagem 4-->
-              <div class="h-45 w-45 md:w-1/3 bg-white"></div>
-              <!-- Espaço com informações-->
-              <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-                <!-- Div organizadora-->
-                <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                  <!-- Texto titulo-->
-                  <h4 class="text-2xl text-white font-semibold">After do Baco</h4>
-                  <!-- Horário -->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso" />
-                    <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                  </div>
-                  <!-- Local-->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização" />
-                    <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                  </div>
-                  <!-- Categorias -->
-                  <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center">
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                    </div>
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                    </div>
-                  </div>
-                  <!--Ponteiro-->
-                  <!-- Monta a posição absoluta do ponteiro na direita-->
-                  <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                    <a href="/pages/roles/detalhes-role.html"
-                      ><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg" /> <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg" />
-                    </a>
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Molde 5-->
-            <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
-              <!-- Imagem 5-->
-              <div class="h-45 w-45 md:w-1/3 bg-white"></div>
-              <!-- Espaço com informações-->
-              <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-                <!-- Div organizadora-->
-                <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                  <!-- Texto titulo-->
-                  <h4 class="text-2xl text-white font-semibold">After do Baco</h4>
-                  <!-- Horário -->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso" />
-                    <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                  </div>
-                  <!-- Local-->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização" />
-                    <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                  </div>
-                  <!-- Categorias -->
-                  <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center">
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                    </div>
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                    </div>
-                  </div>
-                  <!--Ponteiro-->
-                  <!-- Monta a posição absoluta do ponteiro na direita-->
-                  <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                    <a href="/pages/roles/detalhes-role.html"
-                      ><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg" /> <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg" />
-                    </a>
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Molde 6-->
-            <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
-              <!-- Imagem 6-->
-              <div class="h-45 w-45 md:w-1/3 bg-white"></div>
-              <!-- Espaço com informações-->
-              <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-                <!-- Div organizadora-->
-                <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                  <!-- Texto titulo-->
-                  <h4 class="text-2xl text-white font-semibold">After do Baco</h4>
-                  <!-- Horário -->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso" />
-                    <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                  </div>
-                  <!-- Local-->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização" />
-                    <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                  </div>
-                  <!-- Categorias -->
-                  <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center">
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                    </div>
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                    </div>
-                  </div>
-                  <!--Ponteiro-->
-                  <!-- Monta a posição absoluta do ponteiro na direita-->
-                  <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                    <a href="/pages/roles/detalhes-role.html"
-                      ><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg" /> <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg" />
-                    </a>
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Molde 7-->
-            <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
-              <!-- Imagem 7-->
-              <div class="h-45 w-45 md:w-1/3 bg-white"></div>
-              <!-- Espaço com informações-->
-              <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-                <!-- Div organizadora-->
-                <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                  <!-- Texto titulo-->
-                  <h4 class="text-2xl text-white font-semibold">After do Baco</h4>
-                  <!-- Horário -->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso" />
-                    <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                  </div>
-                  <!-- Local-->
-                  <div class="flex flex-row items-center">
-                    <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização" />
-                    <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                  </div>
-                  <!-- Categorias -->
-                  <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center">
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                    </div>
-                    <div class="relative flex flex-row self-end">
-                      <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                      <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização" />
-                      <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                    </div>
-                  </div>
-                  <!--Ponteiro-->
-                  <!-- Monta a posição absoluta do ponteiro na direita-->
-                  <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                    <a href="/pages/roles/detalhes-role.html"
-                      ><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg" /> <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg" />
-                    </a>
-                    <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Grupo de Data: Sábado -->
+        <div class="date-group flex flex-col gap-6">
+          <h4 class="text-sm font-semibold text-white">Sábado, 7 de Maio de 2025.</h4>
+          <div class="cards-container grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-3" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-3" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-2" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-3" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
           </div>
+        </div>
 
-          <!-- Wrapper com texto 3 -->
-          <div class="flex flex-col flex-wrap justify-center mb-6">
-            <p class="text-2xl xl:mt-4 xl:pr-4 xl:mx-4 xl:mb-8 font-semibold text-white text-center xl:text-left">Domingo, 18 de Maio de 2025.</p>
-            <!-- Wrapper dos containers 3 -->
-            <div class="flex flex-row flex-wrap gap-2 justify-center">
-              <!-- Molde 8-->
-              <div class="h-45 w-100 md:w-135 md:max-w-[45%] my-4 xl:pr-4 xl:mx-4 bg-[#272032] flex md:flex-grow relative">
-                <!-- Imagem 8-->
-                <div class="h-45 w-45 md:w-1/3 bg-white"></div>
-                <!-- Espaço com informações-->
-                <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-                  <!-- Div organizadora-->
-                  <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                    <!-- Texto titulo-->
-                    <h4 class="text-2xl text-white font-semibold">After do Baco</h4>
-                    <!-- Horário -->
-                    <div class="flex flex-row items-center">
-                      <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso" />
-                      <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                    </div>
-                    <!-- Local-->
-                    <div class="flex flex-row items-center">
-                      <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização" />
-                      <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                    </div>
-                    <!-- Categorias -->
-                    <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center">
-                      <div class="relative flex flex-row self-end">
-                        <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                        <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização" />
-                        <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                      </div>
-                      <div class="relative flex flex-row self-end">
-                        <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                        <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização" />
-                        <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                      </div>
-                    </div>
-                    <!--Ponteiro-->
-                    <!-- Monta a posição absoluta do ponteiro na direita-->
-                    <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                      <a href="/pages/roles/detalhes-role.html"
-                        ><img class="h-[48px] md:h-0 w-[48px] md:w-0 cursor-pointer hover:scale-110 duration-150" src="imgs/Button-Seta-Rosa.svg" /> <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2 cursor-pointer hover:scale-110 duration-150" src="imgs/Button Seta.svg" />
-                      </a>
-                      <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Molde fantasma 2-->
-              <div class="md:my-8 h-0 md:h-45 md:w-100 md:w-135 xl:pr-4 xl:mx-4 md:max-w-[45%] flex-grow max-w-1/2 bg-[#272032] flex relative invisible pointer-events-none">
-                <!-- Imagem fantasma 2-->
-                <div class="h-45 w-45 md:w-1/3 bg-white"></div>
-                <!-- Espaço com informações-->
-                <div class="h-45 w-55 md:w-2/3 overflow-hidden">
-                  <!-- Div organizadora-->
-                  <div class="flex h-full flex-col justify-start md:py-6 px-2 xl:px-4.5">
-                    <!-- Texto titulo-->
-                    <h4 class="text-2xl text-white font-semibold">After do Baco</h4>
-                    <!-- Horário -->
-                    <div class="flex flex-row items-center">
-                      <img class="mt-3 mb-1.5" src="imgs/Acess Time.svg" alt="Tempo de acesso" />
-                      <p class="mt-3 mb-1.5 md:mx-0 xl:mx-1.5 mx-1.5">20:00 - 05:00</p>
-                    </div>
-                    <!-- Local-->
-                    <div class="flex flex-row items-center">
-                      <img class="mt-1.5 md:mt-0 md:mb-3" src="imgs/Pin Drop.svg" alt="Localização" />
-                      <p class="mt-1.5 md:mb-3 md:mx-0 xl:mx-1.5 mx-1.5">Baco Bar Gastronomia</p>
-                    </div>
-                    <!-- Categorias -->
-                    <div class="flex flex-col-reverse mt-1.5 md:mt-0 md:flex-row items-center">
-                      <div class="relative flex flex-row self-end">
-                        <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#DB2763]">|</span>
-                        <img class="md:mt-1.5 md:mb-3.0" src="imgs/Local Bar.svg" alt="Localização" />
-                        <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#DB2763]">Categoria</p>
-                      </div>
-                      <div class="relative flex flex-row self-end">
-                        <span class="md:pt-1.5 pt-0 mr-1 flex flex-row font-extrabold text-[#574AE2]">|</span>
-                        <img class="md:mt-1.5 md:mb-3.0" src="imgs/Music Note.svg" alt="Localização" />
-                        <p class="md:mt-1.5 md:mb-3.0 mx-1.5 text-[#574AE2]">Categoria</p>
-                      </div>
-                    </div>
-                    <!--Ponteiro-->
-                    <!-- Monta a posição absoluta do ponteiro na direita-->
-                    <div class="absolute right-35 top-28 md:right-4 md:top-1/2 md:-translate-y-1/2">
-                      <img class="h-[48px] md:h-0 w-[48px] md:w-0" src="imgs/Button-Seta-Rosa.svg" />
-                      <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mr-2" src="imgs/Button Seta.svg" />
-                      <img class="h-0 md:h-[48px] w-0 md:w-[48px] md:mt-4 md:mr-2" src="imgs/Button Cora.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Grupo de Data: Sábado -->
+        <div class="date-group flex flex-col gap-6">
+          <h4 class="text-sm font-semibold text-white">Domingo, 8 de Maio de 2025.</h4>
+          <div class="cards-container grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-2" categorias='[{"icon":"celebration", "text":"Festa", "color":"#FFC700"}]'> </card-proximo-role>
+            <card-proximo-role img-src="https://placehold.co/300x300/D9D9D9/D9D9D9" titulo="After do Baco" horario="20:00 - 05:00" lugar="Baco Bar Gastronomia" href="/role/after-do-baco-3" categorias='[{"icon":"restaurant", "text":"Comida", "color":"#70FF93"}]'> </card-proximo-role>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Busca de rolê-->
     <div class="w-full flex justify-center h-auto bg-[#1A1423] pb-6">
@@ -746,11 +312,15 @@
     </div>
 
     <!-- Script main.js -->
-    <script src="./js/main.js"></script>
-    <script src="./js/card-role.js"></script>
-    <script src="./components/navbar.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
+    <!-- <script src="./js/card-role.js"></script>
+    <script src="./components/navbar.js"></script> -->
 
     <!-- Script do Card de Rolê em Destaque, Section "Escolha do I a Boa" -->
-    <script src="./components/CardRoleDestaque.js"></script>
+    <!-- <script src="./components/CardRoleDestaque.js"></script> -->
+
+    <!-- Script do Card de Próximo Rolê -->
+    <!-- <script src="./components/CardProximoRole.js"></script> -->
   </body>
 </html>
