@@ -47,9 +47,9 @@ class NavbarIaBoa extends HTMLElement {
         </button>
 
         <ul class="hidden md:flex space-x-6">
-          <li><a href="/IaBoa/index.html" class="nav-link ${currentPage === 'index.html' ? 'active' : ''}">Página Inicial</a></li>
-          <li><a href="/IaBoa/pages/sobre.html" class="nav-link ${currentPage === 'sobre.html' ? 'active' : ''}">Sobre o Projeto</a></li>
-          <li><a href="/IaBoa/pages/desenvolvedores.html" class="nav-link ${currentPage === 'desenvolvedores.html' ? 'active' : ''}">Desenvolvedores</a></li>
+          <li><a href="../index.html" class="nav-link ${currentPage === 'index.html' ? 'active' : ''}">Página Inicial</a></li>
+          <li><a href="../pages/sobre.html" class="nav-link ${currentPage === 'sobre.html' ? 'active' : ''}">Sobre o Projeto</a></li>
+          <li><a href="../pages/desenvolvedores.html" class="nav-link ${currentPage === 'desenvolvedores.html' ? 'active' : ''}">Desenvolvedores</a></li>
         </ul>
 
         <div class="text-xl font-semibold">I a Boa?</div>
@@ -146,10 +146,10 @@ class NavbarIaBoa extends HTMLElement {
     const cadastroBtn = this.querySelector('#cadastro-btn');
     const mobileCadastroBtn = this.querySelector('#mobile-cadastro-btn');
     cadastroBtn?.addEventListener('click', () => {
-      window.location.href = '../pages/autenticacao/cadastrar-usuario.html';
+      window.location.href = '../pages/autenticacao/cadastrar.html';
     });
     mobileCadastroBtn?.addEventListener('click', () => {
-      window.location.href = '../pages/autenticacao/cadastrar-usuario.html';
+      window.location.href = '../pages/autenticacao/cadastrar.html';
     });
 
     // LOGOUT
