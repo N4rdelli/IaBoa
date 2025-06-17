@@ -4,6 +4,8 @@ fetch('/components/navbar.html').then(res => res.text()).then(data => document.g
 import('/components/CardRoleDestaque.js');
 import('/components/CategoriaBadge.js');
 import('/components/CardProximoRole.js');
+import('/components/CardCategoriaBloco.js');
+import('/components/CardCategoriaInline.js');
 
 // Animações de destaque dos cards
 // Executa o script quando o conteúdo do DOM estiver totalmente carregado.
