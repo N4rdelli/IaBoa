@@ -50,10 +50,10 @@ template.innerHTML = `
   </style>
 
   <!-- Container principal do card. -->
-  <div id="card-container" class="card-container overflow-hidden flex flex-col md:flex-row shadow-lg">
+  <div id="card-container" class="card-container overflow-hidden flex flex-col xl:flex-row shadow-lg">
     
     <!-- Container da Imagem -->
-    <img id="card-img" src="https://placehold.co/300x300/E2E8F0/E2E8F0" alt="" class="w-full h-full md:w-48 md:h-auto object-cover flex-shrink-0">
+    <img id="card-img" src="https://placehold.co/300x300/E2E8F0/E2E8F0" alt="" class="w-full h-48 xl:w-48 xl:h-auto object-cover flex-shrink-0">
 
     <!-- Container de Informações -->
     <div class="info-container px-6 py-8 flex-grow flex justify-between items-center gap-4">
